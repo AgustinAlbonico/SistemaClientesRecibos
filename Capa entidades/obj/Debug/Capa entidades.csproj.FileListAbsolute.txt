@@ -1,0 +1,11 @@
+E:\BACKUP\Escritorio\Programacion\Proyectos\PROPIOS\.NET\Crud(win forms-ef-capas)\Capa entidades\bin\Debug\Capa entidades.dll
+E:\BACKUP\Escritorio\Programacion\Proyectos\PROPIOS\.NET\Crud(win forms-ef-capas)\Capa entidades\bin\Debug\Capa entidades.pdb
+E:\BACKUP\Escritorio\Programacion\Proyectos\PROPIOS\.NET\Crud(win forms-ef-capas)\Capa entidades\obj\Debug\Capa entidades.csproj.AssemblyReference.cache
+E:\BACKUP\Escritorio\Programacion\Proyectos\PROPIOS\.NET\Crud(win forms-ef-capas)\Capa entidades\obj\Debug\Capa entidades.csproj.CoreCompileInputs.cache
+E:\BACKUP\Escritorio\Programacion\Proyectos\PROPIOS\.NET\Crud(win forms-ef-capas)\Capa entidades\obj\Debug\Capa entidades.dll
+E:\BACKUP\Escritorio\Programacion\Proyectos\PROPIOS\.NET\Crud(win forms-ef-capas)\Capa entidades\obj\Debug\Capa entidades.pdb
+E:\BACKUP\Escritorio\Programacion\Proyectos\PROPIOS\.NET\Sistema recibos\Sistema recibos App\Capa entidades\bin\Debug\Capa entidades.dll
+E:\BACKUP\Escritorio\Programacion\Proyectos\PROPIOS\.NET\Sistema recibos\Sistema recibos App\Capa entidades\bin\Debug\Capa entidades.pdb
+E:\BACKUP\Escritorio\Programacion\Proyectos\PROPIOS\.NET\Sistema recibos\Sistema recibos App\Capa entidades\obj\Debug\Capa entidades.csproj.CoreCompileInputs.cache
+E:\BACKUP\Escritorio\Programacion\Proyectos\PROPIOS\.NET\Sistema recibos\Sistema recibos App\Capa entidades\obj\Debug\Capa entidades.dll
+E:\BACKUP\Escritorio\Programacion\Proyectos\PROPIOS\.NET\Sistema recibos\Sistema recibos App\Capa entidades\obj\Debug\Capa entidades.pdb

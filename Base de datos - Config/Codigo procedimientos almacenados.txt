@@ -1,0 +1,32 @@
+CREATE PROCEDURE sp_CrearReciboNuevo
+	@id_cliente int, @desc varchar(100), @importe real, @mes int, @anio int
+AS
+	BEGIN;
+
+		DECLARE @contador int;
+
+		SELECT @contador = contador FROM sistema WHERE id_sistema = 1;
+
+		INSERT INTO recibos(id_cliente, descripcion, importe, mes_comprobante, anio_comprobante, nro_comprobante)
+		VALUES (@id_cliente, @desc, @importe, @mes, @anio, @contador);
+
+		UPDATE sistema SET contador = contador + 1 WHERE id_sistema = 1;
+	END
+
+
+CREATE PROCEDURE sp_BuscarUltimoRecibo
+AS
+	SELECT * FROM db_sistema_recibos.dbo.recibos r 
+		INNER JOIN clientes c 
+			ON c.id_cliente = r.id_cliente
+		WHERE id_recibo = @@IDENTITY;
+GO
+
+CREATE PROCEDURE sp_RecibosPorMesYAnio
+@mes int, @anio int
+AS
+	SELECT r.id_recibo, r.id_cliente, c.nombre, c.cuit, c.categoria, r.nro_comprobante, r.fecha_emision_comprobante, r.descripcion, r.importe FROM recibos r
+	INNER JOIN clientes c
+		ON c.id_cliente = r.id_cliente
+	WHERE r.mes_comprobante = @mes AND r.anio_comprobante = @anio
+GO
