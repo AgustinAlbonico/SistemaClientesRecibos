@@ -76,3 +76,38 @@ E:\BACKUP\Escritorio\Programacion\Proyectos\PROPIOS\.NET\Sistema recibos\Sistema
 E:\BACKUP\Escritorio\Programacion\Proyectos\PROPIOS\.NET\Sistema recibos\Sistema recibos App\Capa presentacion\obj\Debug\Capa presentacion.csproj.CopyComplete
 E:\BACKUP\Escritorio\Programacion\Proyectos\PROPIOS\.NET\Sistema recibos\Sistema recibos App\Capa presentacion\obj\Debug\Sistema de recibos.exe
 E:\BACKUP\Escritorio\Programacion\Proyectos\PROPIOS\.NET\Sistema recibos\Sistema recibos App\Capa presentacion\obj\Debug\Sistema de recibos.pdb
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\bin\Debug\Sistema de recibos.exe.config
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\bin\Debug\Sistema de recibos.exe.manifest
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\bin\Debug\Sistema de recibos.application
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\bin\Debug\Sistema de recibos.exe
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\bin\Debug\Sistema de recibos.pdb
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\bin\Debug\Capa dominio.dll
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\bin\Debug\Capa entidades.dll
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\bin\Debug\CrystalDecisions.ReportSource.dll
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\bin\Debug\CrystalDecisions.Shared.dll
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\bin\Debug\CrystalDecisions.Windows.Forms.dll
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\bin\Debug\Guna.UI2.dll
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\bin\Debug\log4net.dll
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\bin\Debug\Capa datos.dll
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\bin\Debug\AxShockwaveFlashObjects.dll
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\bin\Debug\ShockwaveFlashObjects.dll
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\bin\Debug\stdole.dll
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\bin\Debug\Capa dominio.pdb
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\bin\Debug\Capa entidades.pdb
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\bin\Debug\log4net.xml
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\bin\Debug\Capa datos.pdb
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\obj\Debug\Capa presentacion.csproj.AssemblyReference.cache
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\obj\Debug\Capa_presentacion.Home.resources
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\obj\Debug\Capa_presentacion.PantallaRecibos.resources
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\obj\Debug\Capa_presentacion.Properties.Resources.resources
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\obj\Debug\Capa_presentacion.Recibo.resources
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\obj\Debug\Capa_presentacion.Recibos_Mensuales.resources
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\obj\Debug\Capa presentacion.csproj.GenerateResource.cache
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\obj\Debug\Capa presentacion.csproj.CoreCompileInputs.cache
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\obj\Debug\Sistema de recibos.exe.manifest
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\obj\Debug\Sistema de recibos.application
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\obj\Debug\Capa presentacion.csproj.CopyComplete
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\obj\Debug\Sistema de recibos.exe
+E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\obj\Debug\Sistema de recibos.pdb

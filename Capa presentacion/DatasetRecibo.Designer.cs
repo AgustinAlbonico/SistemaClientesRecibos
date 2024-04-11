@@ -303,6 +303,10 @@ namespace Capa_presentacion {
             
             private global::System.Data.DataColumn columnanio_comprobante;
             
+            private global::System.Data.DataColumn columndetalle_2;
+            
+            private global::System.Data.DataColumn columndetalle_3;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public DatatableReciboDataTable() {
@@ -434,6 +438,22 @@ namespace Capa_presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn detalle_2Column {
+                get {
+                    return this.columndetalle_2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn detalle_3Column {
+                get {
+                    return this.columndetalle_3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -469,7 +489,7 @@ namespace Capa_presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DatatableReciboRow AddDatatableReciboRow(short nro_comprobante, short id_cliente, string nombre, short cod_postal, string localidad, string categoria, string provincia, string cuit, decimal importe, string descripcion, short mes_comprobante, short anio_comprobante) {
+            public DatatableReciboRow AddDatatableReciboRow(short nro_comprobante, short id_cliente, string nombre, short cod_postal, string localidad, string categoria, string provincia, string cuit, decimal importe, string descripcion, short mes_comprobante, short anio_comprobante, string detalle_2, string detalle_3) {
                 DatatableReciboRow rowDatatableReciboRow = ((DatatableReciboRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         nro_comprobante,
@@ -483,7 +503,9 @@ namespace Capa_presentacion {
                         importe,
                         descripcion,
                         mes_comprobante,
-                        anio_comprobante};
+                        anio_comprobante,
+                        detalle_2,
+                        detalle_3};
                 rowDatatableReciboRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDatatableReciboRow);
                 return rowDatatableReciboRow;
@@ -518,6 +540,8 @@ namespace Capa_presentacion {
                 this.columndescripcion = base.Columns["descripcion"];
                 this.columnmes_comprobante = base.Columns["mes_comprobante"];
                 this.columnanio_comprobante = base.Columns["anio_comprobante"];
+                this.columndetalle_2 = base.Columns["detalle_2"];
+                this.columndetalle_3 = base.Columns["detalle_3"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -547,6 +571,10 @@ namespace Capa_presentacion {
                 base.Columns.Add(this.columnmes_comprobante);
                 this.columnanio_comprobante = new global::System.Data.DataColumn("anio_comprobante", typeof(short), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnanio_comprobante);
+                this.columndetalle_2 = new global::System.Data.DataColumn("detalle_2", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndetalle_2);
+                this.columndetalle_3 = new global::System.Data.DataColumn("detalle_3", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndetalle_3);
                 this.columnnro_comprobante.ReadOnly = true;
             }
             
@@ -885,6 +913,38 @@ namespace Capa_presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string detalle_2 {
+                get {
+                    try {
+                        return ((string)(this[this.tableDatatableRecibo.detalle_2Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'detalle_2\' de la tabla \'DatatableRecibo\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDatatableRecibo.detalle_2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string detalle_3 {
+                get {
+                    try {
+                        return ((string)(this[this.tableDatatableRecibo.detalle_3Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'detalle_3\' de la tabla \'DatatableRecibo\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDatatableRecibo.detalle_3Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool Isnro_comprobanteNull() {
                 return this.IsNull(this.tableDatatableRecibo.nro_comprobanteColumn);
             }
@@ -1025,6 +1085,30 @@ namespace Capa_presentacion {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void Setanio_comprobanteNull() {
                 this[this.tableDatatableRecibo.anio_comprobanteColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isdetalle_2Null() {
+                return this.IsNull(this.tableDatatableRecibo.detalle_2Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setdetalle_2Null() {
+                this[this.tableDatatableRecibo.detalle_2Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isdetalle_3Null() {
+                return this.IsNull(this.tableDatatableRecibo.detalle_3Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setdetalle_3Null() {
+                this[this.tableDatatableRecibo.detalle_3Column] = global::System.Convert.DBNull;
             }
         }
         

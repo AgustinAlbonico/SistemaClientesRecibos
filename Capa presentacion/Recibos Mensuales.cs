@@ -145,9 +145,10 @@ namespace Capa_presentacion
 
                     getData();
 
-                    if (dgvRecibos.Rows.Count == 0) {MessageBox.Show("No hay recibos emitidos para el mes y año seleccionados", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                    if (dgvRecibos.Rows.Count == 0) { MessageBox.Show("No hay recibos emitidos para el mes y año seleccionados", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); }
                 }
-            } catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -155,28 +156,40 @@ namespace Capa_presentacion
 
         private void btnImprimir_Click(object sender, EventArgs e)
         {
-            ReciboNegocio rn = new ReciboNegocio();
-            if (dgvRecibos.SelectedRows.Count == 0)
+            try
             {
-                MessageBox.Show("No hay ningun recibo seleccionado!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                int id_recibo = Int16.Parse(dgvRecibos.CurrentRow.Cells[0].Value.ToString());
-                DataTable recibo = rn.getRecibo(id_recibo);
-
-                string categoriaFormated = "";
-                switch (recibo.Rows[0]["categoria"])
+                btnImprimir.Enabled = false;
+                ReciboNegocio rn = new ReciboNegocio();
+                if (dgvRecibos.SelectedRows.Count == 0)
                 {
-                    case "M": categoriaFormated = "MONOTRIBUTO"; break;
-                    case "R": categoriaFormated = "RESPONSABLE INSCRIPTO"; break;
-                    case "E": categoriaFormated = "EXENTO"; break;
-                    case "C": categoriaFormated = "CONSUMIDOR FINAL"; break;
+                    MessageBox.Show("No hay ningun recibo seleccionado!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                recibo.Rows[0]["categoria"] = categoriaFormated;
+                else
+                {
+                    int id_recibo = Int16.Parse(dgvRecibos.CurrentRow.Cells[0].Value.ToString());
+                    DataTable recibo = rn.getRecibo(id_recibo);
 
-                Recibo r = new Recibo(recibo);
-                r.ShowDialog();
+                    string categoriaFormated = "";
+                    switch (recibo.Rows[0]["categoria"])
+                    {
+                        case "M": categoriaFormated = "MONOTRIBUTO"; break;
+                        case "R": categoriaFormated = "RESPONSABLE INSCRIPTO"; break;
+                        case "E": categoriaFormated = "EXENTO"; break;
+                        case "C": categoriaFormated = "CONSUMIDOR FINAL"; break;
+                    }
+                    recibo.Rows[0]["categoria"] = categoriaFormated;
+
+                    Recibo r = new Recibo(recibo);
+                    r.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                btnImprimir.Enabled = true;
             }
         }
 
