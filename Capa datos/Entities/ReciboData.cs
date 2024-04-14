@@ -14,15 +14,17 @@ namespace Capa_datos.Entities
         SqlDataReader dr;
         DataTable dt = new DataTable();
 
-        public DataTable getReciboFormulario(int id_cliente, string descripcion, float importe, int mes, int anio)
+        public DataTable getReciboFormulario(int id_cliente, string lineaUno, float importe, int mes, int anio)
         {
             try
             {
+                Console.WriteLine(lineaUno, importe, mes, anio, id_cliente);
+
                 cmd.Connection = this.OpenConnection();
                 cmd.CommandText = "sp_CrearReciboNuevo";
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("id_cliente", id_cliente);
-                cmd.Parameters.AddWithValue("desc", descripcion);
+                cmd.Parameters.AddWithValue("desc", lineaUno);
                 cmd.Parameters.AddWithValue("importe", importe);
                 cmd.Parameters.AddWithValue("mes", mes);
                 cmd.Parameters.AddWithValue("anio", anio);

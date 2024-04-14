@@ -12,15 +12,15 @@ using Capa_entidades.Entidades;
 
 namespace Capa_presentacion
 {
-    public partial class Home : Form
+    public partial class PanelClientes : Form
     {
 
-        PersonaNegocio pn = new PersonaNegocio();
+        ClienteNegocio cn = new ClienteNegocio();
 
         bool edit = false;
         bool nuevo = false;
 
-        public Home()
+        public PanelClientes()
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
@@ -31,8 +31,8 @@ namespace Capa_presentacion
         private void getData()
         {
             //Si no creo pern en este entorno me carga los datos varias veces idk
-            PersonaNegocio pern = new PersonaNegocio();
-            dgvDatos.DataSource = pern.GetPersonas();
+            ClienteNegocio cli = new ClienteNegocio();
+            dgvDatos.DataSource = cli.GetClientes();
 
             dgvDatos.Columns[0].HeaderText = "ID";
             dgvDatos.Columns[1].HeaderText = "Nombre";
@@ -136,7 +136,7 @@ namespace Capa_presentacion
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Dispose();
         }
 
         private void btnMaximize_Click(object sender, EventArgs e)
@@ -243,7 +243,7 @@ namespace Capa_presentacion
                 {
                     try
                     {
-                        pn.EliminarCliente(dgvDatos.CurrentRow.Cells[0].Value.ToString());
+                        cn.EliminarCliente(dgvDatos.CurrentRow.Cells[0].Value.ToString());
                         MessageBox.Show("Usuario eliminado con exito");
                         getData();
                     }
@@ -278,7 +278,7 @@ namespace Capa_presentacion
                 {
                     try
                     {
-                        pn.CrearCliente(nombre, direccion, localidad, codPostal, telefono, cuit, provincia, categoria);
+                        cn.CrearCliente(nombre, direccion, localidad, codPostal, telefono, cuit, provincia, categoria);
                         MessageBox.Show("Usuario cargado con exito!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         handleNuevoUsuario();
                         getData();
@@ -294,7 +294,7 @@ namespace Capa_presentacion
                     int id_cliente = Int32.Parse(dgvDatos.CurrentRow.Cells[0].Value.ToString());
                     try
                     {
-                        pn.ModificarCliente(id_cliente, nombre, direccion, localidad, codPostal, telefono, cuit, provincia, categoria);
+                        cn.ModificarCliente(id_cliente, nombre, direccion, localidad, codPostal, telefono, cuit, provincia, categoria);
                         MessageBox.Show("Usuario modificado con exito!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         handleModificarUsuario();
                         getData();

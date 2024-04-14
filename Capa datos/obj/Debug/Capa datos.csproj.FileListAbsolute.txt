@@ -25,3 +25,12 @@ E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema rec
 E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa datos\obj\Debug\Capa datos.csproj.CopyComplete
 E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa datos\obj\Debug\Capa datos.dll
 E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa datos\obj\Debug\Capa datos.pdb
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa datos\bin\Debug\Capa datos.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa datos\bin\Debug\Capa datos.pdb
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa datos\bin\Debug\Capa entidades.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa datos\bin\Debug\Capa entidades.pdb
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa datos\obj\Debug\Capa datos.csproj.AssemblyReference.cache
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa datos\obj\Debug\Capa datos.csproj.CoreCompileInputs.cache
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa datos\obj\Debug\Capa datos.csproj.CopyComplete
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa datos\obj\Debug\Capa datos.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa datos\obj\Debug\Capa datos.pdb

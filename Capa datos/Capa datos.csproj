@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Connection\Connection.cs" />
     <Compile Include="Entities\ClienteData.cs" />
+    <Compile Include="Entities\GastoData.cs" />
     <Compile Include="Entities\ReciboData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

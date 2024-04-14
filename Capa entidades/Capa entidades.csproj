@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="BusisnessClass.cs" />
     <Compile Include="Entidades\ClienteEntity.cs" />
+    <Compile Include="Entidades\GastoEntity.cs" />
     <Compile Include="Entidades\ReciboEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

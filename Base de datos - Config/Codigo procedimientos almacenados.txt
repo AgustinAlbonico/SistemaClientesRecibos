@@ -30,3 +30,60 @@ AS
 		ON c.id_cliente = r.id_cliente
 	WHERE r.mes_comprobante = @mes AND r.anio_comprobante = @anio
 GO
+
+CREATE PROCEDURE sp_IngresosDelDia
+	@fecha_ingresada DATE
+AS
+	BEGIN;
+		SELECT SUM(importe) ingresos FROM recibos 
+			group by CAST(fecha_emision_comprobante AS DATE)
+			having CAST(fecha_emision_comprobante AS DATE) = @fecha_ingresada
+	END
+
+
+
+CREATE PROCEDURE sp_IngresosEgresosPorDia
+	@mes_ingresado int, @anio_ingresado int
+AS
+	BEGIN
+		CREATE TABLE #TablaIngresos(
+			fecha DATE,
+			ingresos FLOAT
+		)
+
+		INSERT INTO #TablaIngresos (fecha, ingresos)
+		SELECT CAST(r.fecha_emision_comprobante AS Date) fecha, SUM(r.importe) ingresos 
+			FROM recibos r
+			WHERE MONTH(r.fecha_emision_comprobante) = @mes_ingresado and YEAR(r.fecha_emision_comprobante) = @anio_ingresado
+			GROUP BY CAST(r.fecha_emision_comprobante AS Date)
+
+
+		CREATE TABLE #TablaEgresos(
+			fecha DATE,
+			egresos FLOAT
+		)
+
+		INSERT INTO #TablaEgresos(fecha, egresos)
+		SELECT g.fecha fecha, SUM(g.importe) egresos 
+			FROM gastos g
+			WHERE MONTH(g.fecha) = @mes_ingresado and YEAR(g.fecha) = @anio_ingresado
+			GROUP BY g.fecha
+
+		SELECT COALESCE(ti.fecha, te.fecha) AS fecha, ISNULL(ingresos, 0) AS ingresos, ISNULL(egresos, 0) AS egresos, ISNULL(ingresos, 0) - ISNULL(egresos, 0) AS saldo FROM #TablaIngresos ti
+			FULL OUTER JOIN #TablaEgresos te 
+			ON ti.fecha = te.fecha
+			ORDER BY fecha desc
+
+		DROP TABLE #TablaIngresos
+		DROP TABLE #TablaEgresos
+
+	END
+
+CREATE PROCEDURE sp_CrearGasto
+	@desc varchar(80), @importe float, @fecha Date
+AS
+	BEGIN
+		INSERT INTO gastos(descripcion, importe, fecha) 
+		VALUES(@desc, @importe, @fecha);
+	END
+

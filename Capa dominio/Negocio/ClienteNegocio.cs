@@ -11,11 +11,11 @@ using System.Text.RegularExpressions;
 
 namespace Capa_negocio.Negocio
 {
-    public class PersonaNegocio
+    public class ClienteNegocio
     {
         ClienteData pData = new ClienteData();
 
-        public DataTable GetPersonas()
+        public DataTable GetClientes()
         {
             DataTable dt = new DataTable();
             dt = pData.getClientes();

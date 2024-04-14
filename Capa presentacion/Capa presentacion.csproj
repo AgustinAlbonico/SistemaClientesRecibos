@@ -158,11 +158,29 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatasetRecibo.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Home.cs">
+    <Compile Include="PantallaLibroDiario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
+    <Compile Include="PantallaLibroDiario.Designer.cs">
+      <DependentUpon>PantallaLibroDiario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaGastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaGastos.Designer.cs">
+      <DependentUpon>PantallaGastos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelClientes.Designer.cs">
+      <DependentUpon>PanelClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
     <Compile Include="PantallaRecibos.cs">
       <SubType>Form</SubType>
@@ -190,8 +208,17 @@
       <DependentUpon>Reporte.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
+    <EmbeddedResource Include="PantallaLibroDiario.resx">
+      <DependentUpon>PantallaLibroDiario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaGastos.resx">
+      <DependentUpon>PantallaGastos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelClientes.resx">
+      <DependentUpon>PanelClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaRecibos.resx">
       <DependentUpon>PantallaRecibos.cs</DependentUpon>

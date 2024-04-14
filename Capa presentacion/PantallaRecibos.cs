@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using Capa_negocio.Negocio;
 using System.Windows.Forms;
 using Capa_entidades.Entidades;
+using System.Globalization;
 
 namespace Capa_presentacion
 {
@@ -17,6 +18,8 @@ namespace Capa_presentacion
         ReciboNegocio rn = new ReciboNegocio();
 
         ReciboEntity re = new ReciboEntity();
+
+        int cantLineas = 1;
 
         public PantallaRecibos(int id_cliente, string nombre, string localidad, string telefono, string cuit, string categoria, string provincia)
         {
@@ -35,12 +38,12 @@ namespace Capa_presentacion
 
             int mesActual = fechaActual.Month;
             if (mesActual != 1)
-            { txtMes.Text = (mesActual - 1).ToString(); }
+            { txtMesLineaUno.Text = (mesActual - 1).ToString(); }
             else
             {
-                txtMes.Text = 12.ToString();
+                txtMesLineaUno.Text = 12.ToString();
             }
-            txtAnio.Text = fechaActual.Year.ToString();
+            txtAnioLineaUno.Text = fechaActual.Year.ToString();
 
             re.Cliente.ID = id_cliente;
         }
@@ -71,14 +74,14 @@ namespace Capa_presentacion
             try
             {
                 btnImprimir.Enabled = false;
-                if (Int16.Parse(txtMes.Text) < 1 || Int16.Parse(txtMes.Text) > 12)
+                if (Int16.Parse(txtMesLineaUno.Text) < 1 || Int16.Parse(txtMesLineaUno.Text) > 12)
                 {
                     MessageBox.Show("El mes ingresado no es valido", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
                     int parsedValue;
-                    if (!int.TryParse(txtAnio.Text, out parsedValue))
+                    if (!int.TryParse(txtAnioLineaUno.Text, out parsedValue))
                     {
                         MessageBox.Show("El año ingresado no es valido", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -91,10 +94,11 @@ namespace Capa_presentacion
                         }
                         else
                         {
-                            re.Mes = Int16.Parse(txtMes.Text);
-                            re.Anio = Int16.Parse(txtAnio.Text);
-                            re.Importe = float.Parse(txtImporte.Text);
-                            re.Descripcion = txtDescripcion.Text.ToUpper();
+                            re.MesLineaUno = Int16.Parse(txtMesLineaUno.Text);
+                            re.AnioLineaUno = Int16.Parse(txtAnioLineaUno.Text);
+                            re.Importe = float.Parse(txtImporte.Text, CultureInfo.InvariantCulture);
+                            re.LineaUno = txtLineaUno.Text.ToUpper();
+
 
                             DataTable dataRecibo = rn.crearYDevolverRecibo(re);
 
@@ -132,6 +136,34 @@ namespace Capa_presentacion
                 MessageBox.Show("Error: " + ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 btnImprimir.Enabled = true;
             }
+        }
+
+        private void btnAgregarLinea_Click(object sender, EventArgs e)
+        {
+            cantLineas++;
+            switch (cantLineas)
+            {
+                case 2:
+                    lblLineaDos.Visible = true;
+                    txtLineaDos.Visible = true;
+                    txtLineaDos.Enabled = true;
+                    txtMesLineaDos.Visible = true;
+                    txtMesLineaDos.Enabled = true;
+                    txtAnioLineaDos.Visible = true;
+                    txtAnioLineaDos.Enabled = true;
+                    break;
+                case 3:
+                    lblLineaTres.Visible = true;
+                    txtLineaTres.Visible = true;
+                    txtLineaTres.Enabled = true;
+                    txtMesLineaTres.Visible = true;
+                    txtMesLineaTres.Enabled = true;
+                    txtAnioLineaTres.Visible = true;
+                    txtAnioLineaTres.Enabled = true;
+                    btnAgregarLinea.Enabled = false;
+                    break;
+            }
+                
         }
     }
 }

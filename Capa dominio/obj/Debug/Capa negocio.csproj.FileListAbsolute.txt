@@ -31,3 +31,14 @@ E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema rec
 E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa dominio\obj\Debug\Capa negocio.csproj.CopyComplete
 E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa dominio\obj\Debug\Capa dominio.dll
 E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa dominio\obj\Debug\Capa dominio.pdb
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\bin\Debug\Capa dominio.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\bin\Debug\Capa dominio.pdb
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\bin\Debug\Capa datos.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\bin\Debug\Capa entidades.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\bin\Debug\Capa datos.pdb
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\bin\Debug\Capa entidades.pdb
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\obj\Debug\Capa negocio.csproj.AssemblyReference.cache
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\obj\Debug\Capa negocio.csproj.CoreCompileInputs.cache
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\obj\Debug\Capa negocio.csproj.CopyComplete
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\obj\Debug\Capa dominio.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\obj\Debug\Capa dominio.pdb

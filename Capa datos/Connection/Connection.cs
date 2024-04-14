@@ -10,8 +10,7 @@ namespace Capa_datos
 {
     public class Connection
     {
-        private SqlConnection con = new SqlConnection("Data Source=tcp:Agustin\\SQLEXPRESS,1541;Initial Catalog=db_sistema_recibos;User ID=SistemaRecibos;Password=root;Encrypt=True;TrustServerCertificate=True");
-
+        private SqlConnection con = new SqlConnection("Data Source=FERNANDO2\\SQLEXPRESS;Initial Catalog=db_sistema_recibos;User ID=sa;Password=root;Encrypt=True;TrustServerCertificate=True");
         protected SqlConnection OpenConnection()
         {
             if (con.State == ConnectionState.Closed) con.Open();

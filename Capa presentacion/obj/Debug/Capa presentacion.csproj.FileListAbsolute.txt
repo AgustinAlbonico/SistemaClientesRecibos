@@ -111,3 +111,38 @@ E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema rec
 E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\obj\Debug\Capa presentacion.csproj.CopyComplete
 E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\obj\Debug\Sistema de recibos.exe
 E:\BACKUP\Escritorio\Programacion\Proyectos\Trabajos\Sistema recibos\Sistema recibos App\Capa presentacion\obj\Debug\Sistema de recibos.pdb
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Debug\Sistema de recibos.exe.config
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Debug\Sistema de recibos.exe.manifest
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Debug\Sistema de recibos.application
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Debug\Sistema de recibos.exe
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Debug\Sistema de recibos.pdb
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Debug\Capa dominio.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Debug\Capa entidades.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Debug\Guna.UI2.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Debug\log4net.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Debug\Capa datos.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Debug\Capa dominio.pdb
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Debug\Capa entidades.pdb
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Debug\log4net.xml
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Debug\Capa datos.pdb
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Debug\Capa presentacion.csproj.AssemblyReference.cache
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Debug\Capa_presentacion.PantallaRecibos.resources
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Debug\Capa_presentacion.Properties.Resources.resources
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Debug\Capa_presentacion.Recibo.resources
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Debug\Capa_presentacion.Recibos_Mensuales.resources
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Debug\Capa presentacion.csproj.GenerateResource.cache
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Debug\Capa presentacion.csproj.CoreCompileInputs.cache
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Debug\Sistema de recibos.exe.manifest
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Debug\Sistema de recibos.application
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Debug\Capa presentacion.csproj.CopyComplete
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Debug\Sistema de recibos.exe
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Debug\Sistema de recibos.pdb
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Debug\Capa_presentacion.Inicio.resources
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Debug\Capa_presentacion.PanelClientes.resources
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Debug\Capa_presentacion.PantallaGastos.resources
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Debug\Capa_presentacion.PantallaLibroDiario.resources

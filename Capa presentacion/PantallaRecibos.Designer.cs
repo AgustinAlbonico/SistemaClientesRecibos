@@ -42,11 +42,20 @@ namespace Capa_presentacion
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.txtDescripcion = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnAgregarLinea = new Guna.UI2.WinForms.Guna2Button();
+            this.txtAnioLineaTres = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtAnioLineaDos = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMesLineaTres = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMesLineaDos = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtLineaTres = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblLineaTres = new System.Windows.Forms.Label();
+            this.txtLineaDos = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMesLineaUno = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblLineaDos = new System.Windows.Forms.Label();
+            this.txtLineaUno = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblLineaUno = new System.Windows.Forms.Label();
             this.txtImporte = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtAnio = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtMes = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtAnioLineaUno = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnCancelar = new Guna.UI2.WinForms.Guna2Button();
             this.lblImporte = new System.Windows.Forms.Label();
             this.btnImprimir = new Guna.UI2.WinForms.Guna2Button();
@@ -58,10 +67,6 @@ namespace Capa_presentacion
             this.lblLocalidad = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblId = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
@@ -193,15 +198,20 @@ namespace Capa_presentacion
             // 
             // guna2Panel4
             // 
-            this.guna2Panel4.Controls.Add(this.guna2TextBox2);
-            this.guna2Panel4.Controls.Add(this.label3);
-            this.guna2Panel4.Controls.Add(this.guna2TextBox1);
-            this.guna2Panel4.Controls.Add(this.label1);
-            this.guna2Panel4.Controls.Add(this.txtDescripcion);
-            this.guna2Panel4.Controls.Add(this.label2);
+            this.guna2Panel4.Controls.Add(this.btnAgregarLinea);
+            this.guna2Panel4.Controls.Add(this.txtAnioLineaTres);
+            this.guna2Panel4.Controls.Add(this.txtAnioLineaDos);
+            this.guna2Panel4.Controls.Add(this.txtMesLineaTres);
+            this.guna2Panel4.Controls.Add(this.txtMesLineaDos);
+            this.guna2Panel4.Controls.Add(this.txtLineaTres);
+            this.guna2Panel4.Controls.Add(this.lblLineaTres);
+            this.guna2Panel4.Controls.Add(this.txtLineaDos);
+            this.guna2Panel4.Controls.Add(this.txtMesLineaUno);
+            this.guna2Panel4.Controls.Add(this.lblLineaDos);
+            this.guna2Panel4.Controls.Add(this.txtLineaUno);
+            this.guna2Panel4.Controls.Add(this.lblLineaUno);
             this.guna2Panel4.Controls.Add(this.txtImporte);
-            this.guna2Panel4.Controls.Add(this.txtAnio);
-            this.guna2Panel4.Controls.Add(this.txtMes);
+            this.guna2Panel4.Controls.Add(this.txtAnioLineaUno);
             this.guna2Panel4.Controls.Add(this.btnCancelar);
             this.guna2Panel4.Controls.Add(this.lblImporte);
             this.guna2Panel4.Controls.Add(this.btnImprimir);
@@ -219,38 +229,236 @@ namespace Capa_presentacion
             this.guna2Panel4.Size = new System.Drawing.Size(1041, 485);
             this.guna2Panel4.TabIndex = 0;
             // 
-            // txtDescripcion
+            // btnAgregarLinea
             // 
-            this.txtDescripcion.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDescripcion.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDescripcion.DefaultText = "";
-            this.txtDescripcion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtDescripcion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtDescripcion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDescripcion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDescripcion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDescripcion.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtDescripcion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDescripcion.Location = new System.Drawing.Point(648, 46);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.PasswordChar = '\0';
-            this.txtDescripcion.PlaceholderText = "Descripción";
-            this.txtDescripcion.SelectedText = "";
-            this.txtDescripcion.Size = new System.Drawing.Size(268, 36);
-            this.txtDescripcion.TabIndex = 2;
+            this.btnAgregarLinea.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAgregarLinea.BorderRadius = 5;
+            this.btnAgregarLinea.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarLinea.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAgregarLinea.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAgregarLinea.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAgregarLinea.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAgregarLinea.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.btnAgregarLinea.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarLinea.Location = new System.Drawing.Point(559, 40);
+            this.btnAgregarLinea.Name = "btnAgregarLinea";
+            this.btnAgregarLinea.Size = new System.Drawing.Size(237, 36);
+            this.btnAgregarLinea.TabIndex = 31;
+            this.btnAgregarLinea.Text = "Agregar línea";
+            this.btnAgregarLinea.Click += new System.EventHandler(this.btnAgregarLinea_Click);
             // 
-            // label2
+            // txtAnioLineaTres
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.Control;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(537, 54);
-            this.label2.Margin = new System.Windows.Forms.Padding(0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 20);
-            this.label2.TabIndex = 26;
-            this.label2.Text = "Descripción:";
+            this.txtAnioLineaTres.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtAnioLineaTres.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAnioLineaTres.DefaultText = "";
+            this.txtAnioLineaTres.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtAnioLineaTres.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtAnioLineaTres.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAnioLineaTres.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAnioLineaTres.Enabled = false;
+            this.txtAnioLineaTres.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAnioLineaTres.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtAnioLineaTres.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAnioLineaTres.Location = new System.Drawing.Point(912, 166);
+            this.txtAnioLineaTres.Name = "txtAnioLineaTres";
+            this.txtAnioLineaTres.PasswordChar = '\0';
+            this.txtAnioLineaTres.PlaceholderText = "Año linea 3";
+            this.txtAnioLineaTres.SelectedText = "";
+            this.txtAnioLineaTres.Size = new System.Drawing.Size(104, 36);
+            this.txtAnioLineaTres.TabIndex = 9;
+            this.txtAnioLineaTres.Visible = false;
+            // 
+            // txtAnioLineaDos
+            // 
+            this.txtAnioLineaDos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtAnioLineaDos.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAnioLineaDos.DefaultText = "";
+            this.txtAnioLineaDos.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtAnioLineaDos.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtAnioLineaDos.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAnioLineaDos.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAnioLineaDos.Enabled = false;
+            this.txtAnioLineaDos.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAnioLineaDos.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtAnioLineaDos.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAnioLineaDos.Location = new System.Drawing.Point(912, 124);
+            this.txtAnioLineaDos.Name = "txtAnioLineaDos";
+            this.txtAnioLineaDos.PasswordChar = '\0';
+            this.txtAnioLineaDos.PlaceholderText = "Año linea 2";
+            this.txtAnioLineaDos.SelectedText = "";
+            this.txtAnioLineaDos.Size = new System.Drawing.Size(104, 36);
+            this.txtAnioLineaDos.TabIndex = 6;
+            this.txtAnioLineaDos.Visible = false;
+            // 
+            // txtMesLineaTres
+            // 
+            this.txtMesLineaTres.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtMesLineaTres.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMesLineaTres.DefaultText = "";
+            this.txtMesLineaTres.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMesLineaTres.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMesLineaTres.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMesLineaTres.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMesLineaTres.Enabled = false;
+            this.txtMesLineaTres.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMesLineaTres.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtMesLineaTres.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMesLineaTres.Location = new System.Drawing.Point(802, 166);
+            this.txtMesLineaTres.Name = "txtMesLineaTres";
+            this.txtMesLineaTres.PasswordChar = '\0';
+            this.txtMesLineaTres.PlaceholderText = "Mes linea 3";
+            this.txtMesLineaTres.SelectedText = "";
+            this.txtMesLineaTres.Size = new System.Drawing.Size(104, 36);
+            this.txtMesLineaTres.TabIndex = 8;
+            this.txtMesLineaTres.Visible = false;
+            // 
+            // txtMesLineaDos
+            // 
+            this.txtMesLineaDos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtMesLineaDos.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMesLineaDos.DefaultText = "";
+            this.txtMesLineaDos.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMesLineaDos.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMesLineaDos.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMesLineaDos.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMesLineaDos.Enabled = false;
+            this.txtMesLineaDos.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMesLineaDos.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtMesLineaDos.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMesLineaDos.Location = new System.Drawing.Point(802, 124);
+            this.txtMesLineaDos.Name = "txtMesLineaDos";
+            this.txtMesLineaDos.PasswordChar = '\0';
+            this.txtMesLineaDos.PlaceholderText = "Mes linea 2";
+            this.txtMesLineaDos.SelectedText = "";
+            this.txtMesLineaDos.Size = new System.Drawing.Size(104, 36);
+            this.txtMesLineaDos.TabIndex = 5;
+            this.txtMesLineaDos.Visible = false;
+            // 
+            // txtLineaTres
+            // 
+            this.txtLineaTres.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtLineaTres.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtLineaTres.DefaultText = "";
+            this.txtLineaTres.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtLineaTres.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtLineaTres.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLineaTres.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLineaTres.Enabled = false;
+            this.txtLineaTres.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLineaTres.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtLineaTres.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLineaTres.Location = new System.Drawing.Point(559, 166);
+            this.txtLineaTres.Name = "txtLineaTres";
+            this.txtLineaTres.PasswordChar = '\0';
+            this.txtLineaTres.PlaceholderText = "Línea 3";
+            this.txtLineaTres.SelectedText = "";
+            this.txtLineaTres.Size = new System.Drawing.Size(237, 36);
+            this.txtLineaTres.TabIndex = 7;
+            this.txtLineaTres.Visible = false;
+            // 
+            // lblLineaTres
+            // 
+            this.lblLineaTres.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblLineaTres.AutoSize = true;
+            this.lblLineaTres.BackColor = System.Drawing.SystemColors.Control;
+            this.lblLineaTres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLineaTres.Location = new System.Drawing.Point(476, 174);
+            this.lblLineaTres.Margin = new System.Windows.Forms.Padding(0);
+            this.lblLineaTres.Name = "lblLineaTres";
+            this.lblLineaTres.Size = new System.Drawing.Size(73, 20);
+            this.lblLineaTres.TabIndex = 30;
+            this.lblLineaTres.Text = "Línea 3:";
+            this.lblLineaTres.Visible = false;
+            // 
+            // txtLineaDos
+            // 
+            this.txtLineaDos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtLineaDos.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtLineaDos.DefaultText = "";
+            this.txtLineaDos.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtLineaDos.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtLineaDos.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLineaDos.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLineaDos.Enabled = false;
+            this.txtLineaDos.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLineaDos.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtLineaDos.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLineaDos.Location = new System.Drawing.Point(559, 124);
+            this.txtLineaDos.Name = "txtLineaDos";
+            this.txtLineaDos.PasswordChar = '\0';
+            this.txtLineaDos.PlaceholderText = "Línea 2";
+            this.txtLineaDos.SelectedText = "";
+            this.txtLineaDos.Size = new System.Drawing.Size(237, 36);
+            this.txtLineaDos.TabIndex = 4;
+            this.txtLineaDos.Visible = false;
+            // 
+            // txtMesLineaUno
+            // 
+            this.txtMesLineaUno.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtMesLineaUno.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMesLineaUno.DefaultText = "";
+            this.txtMesLineaUno.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMesLineaUno.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMesLineaUno.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMesLineaUno.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMesLineaUno.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMesLineaUno.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtMesLineaUno.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMesLineaUno.Location = new System.Drawing.Point(802, 82);
+            this.txtMesLineaUno.Name = "txtMesLineaUno";
+            this.txtMesLineaUno.PasswordChar = '\0';
+            this.txtMesLineaUno.PlaceholderText = "Mes linea 1";
+            this.txtMesLineaUno.SelectedText = "";
+            this.txtMesLineaUno.Size = new System.Drawing.Size(104, 36);
+            this.txtMesLineaUno.TabIndex = 2;
+            // 
+            // lblLineaDos
+            // 
+            this.lblLineaDos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblLineaDos.AutoSize = true;
+            this.lblLineaDos.BackColor = System.Drawing.SystemColors.Control;
+            this.lblLineaDos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLineaDos.Location = new System.Drawing.Point(476, 132);
+            this.lblLineaDos.Margin = new System.Windows.Forms.Padding(0);
+            this.lblLineaDos.Name = "lblLineaDos";
+            this.lblLineaDos.Size = new System.Drawing.Size(73, 20);
+            this.lblLineaDos.TabIndex = 28;
+            this.lblLineaDos.Text = "Línea 2:";
+            this.lblLineaDos.Visible = false;
+            // 
+            // txtLineaUno
+            // 
+            this.txtLineaUno.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtLineaUno.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtLineaUno.DefaultText = "";
+            this.txtLineaUno.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtLineaUno.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtLineaUno.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLineaUno.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLineaUno.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLineaUno.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtLineaUno.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLineaUno.Location = new System.Drawing.Point(559, 82);
+            this.txtLineaUno.Name = "txtLineaUno";
+            this.txtLineaUno.PasswordChar = '\0';
+            this.txtLineaUno.PlaceholderText = "Línea 1";
+            this.txtLineaUno.SelectedText = "";
+            this.txtLineaUno.Size = new System.Drawing.Size(237, 36);
+            this.txtLineaUno.TabIndex = 1;
+            // 
+            // lblLineaUno
+            // 
+            this.lblLineaUno.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblLineaUno.AutoSize = true;
+            this.lblLineaUno.BackColor = System.Drawing.SystemColors.Control;
+            this.lblLineaUno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLineaUno.Location = new System.Drawing.Point(476, 90);
+            this.lblLineaUno.Margin = new System.Windows.Forms.Padding(0);
+            this.lblLineaUno.Name = "lblLineaUno";
+            this.lblLineaUno.Size = new System.Drawing.Size(73, 20);
+            this.lblLineaUno.TabIndex = 26;
+            this.lblLineaUno.Text = "Línea 1:";
             // 
             // txtImporte
             // 
@@ -264,53 +472,33 @@ namespace Capa_presentacion
             this.txtImporte.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtImporte.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtImporte.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtImporte.Location = new System.Drawing.Point(648, 256);
+            this.txtImporte.Location = new System.Drawing.Point(559, 260);
             this.txtImporte.Name = "txtImporte";
             this.txtImporte.PasswordChar = '\0';
             this.txtImporte.PlaceholderText = "Importe";
             this.txtImporte.SelectedText = "";
-            this.txtImporte.Size = new System.Drawing.Size(268, 36);
-            this.txtImporte.TabIndex = 5;
+            this.txtImporte.Size = new System.Drawing.Size(241, 36);
+            this.txtImporte.TabIndex = 10;
             // 
-            // txtAnio
+            // txtAnioLineaUno
             // 
-            this.txtAnio.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtAnio.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAnio.DefaultText = "";
-            this.txtAnio.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtAnio.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtAnio.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAnio.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAnio.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAnio.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtAnio.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAnio.Location = new System.Drawing.Point(648, 214);
-            this.txtAnio.Name = "txtAnio";
-            this.txtAnio.PasswordChar = '\0';
-            this.txtAnio.PlaceholderText = "Año";
-            this.txtAnio.SelectedText = "";
-            this.txtAnio.Size = new System.Drawing.Size(268, 36);
-            this.txtAnio.TabIndex = 4;
-            // 
-            // txtMes
-            // 
-            this.txtMes.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtMes.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMes.DefaultText = "";
-            this.txtMes.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMes.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMes.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMes.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtMes.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMes.Location = new System.Drawing.Point(648, 172);
-            this.txtMes.Name = "txtMes";
-            this.txtMes.PasswordChar = '\0';
-            this.txtMes.PlaceholderText = "Mes";
-            this.txtMes.SelectedText = "";
-            this.txtMes.Size = new System.Drawing.Size(268, 36);
-            this.txtMes.TabIndex = 3;
+            this.txtAnioLineaUno.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtAnioLineaUno.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAnioLineaUno.DefaultText = "";
+            this.txtAnioLineaUno.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtAnioLineaUno.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtAnioLineaUno.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAnioLineaUno.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAnioLineaUno.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAnioLineaUno.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtAnioLineaUno.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAnioLineaUno.Location = new System.Drawing.Point(912, 82);
+            this.txtAnioLineaUno.Name = "txtAnioLineaUno";
+            this.txtAnioLineaUno.PasswordChar = '\0';
+            this.txtAnioLineaUno.PlaceholderText = "Año linea 1";
+            this.txtAnioLineaUno.SelectedText = "";
+            this.txtAnioLineaUno.Size = new System.Drawing.Size(104, 36);
+            this.txtAnioLineaUno.TabIndex = 3;
             // 
             // btnCancelar
             // 
@@ -322,14 +510,14 @@ namespace Capa_presentacion
             this.btnCancelar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCancelar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnCancelar.FillColor = System.Drawing.Color.Firebrick;
-            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(618, 348);
+            this.btnCancelar.Location = new System.Drawing.Point(559, 348);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(0);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(180, 76);
-            this.btnCancelar.TabIndex = 7;
-            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TabIndex = 12;
+            this.btnCancelar.Text = "✘ Cancelar";
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // lblImporte
@@ -337,7 +525,7 @@ namespace Capa_presentacion
             this.lblImporte.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblImporte.AutoSize = true;
             this.lblImporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblImporte.Location = new System.Drawing.Point(537, 263);
+            this.lblImporte.Location = new System.Drawing.Point(473, 267);
             this.lblImporte.Margin = new System.Windows.Forms.Padding(0);
             this.lblImporte.Name = "lblImporte";
             this.lblImporte.Size = new System.Drawing.Size(76, 20);
@@ -354,12 +542,12 @@ namespace Capa_presentacion
             this.btnImprimir.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnImprimir.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnImprimir.FillColor = System.Drawing.Color.MidnightBlue;
-            this.btnImprimir.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnImprimir.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.btnImprimir.ForeColor = System.Drawing.Color.White;
             this.btnImprimir.Location = new System.Drawing.Point(255, 348);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(180, 76);
-            this.btnImprimir.TabIndex = 6;
+            this.btnImprimir.TabIndex = 11;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
@@ -368,7 +556,7 @@ namespace Capa_presentacion
             this.lblAnio.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblAnio.AutoSize = true;
             this.lblAnio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnio.Location = new System.Drawing.Point(537, 223);
+            this.lblAnio.Location = new System.Drawing.Point(934, 52);
             this.lblAnio.Margin = new System.Windows.Forms.Padding(0);
             this.lblAnio.Name = "lblAnio";
             this.lblAnio.Size = new System.Drawing.Size(46, 20);
@@ -380,7 +568,7 @@ namespace Capa_presentacion
             this.lblMes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblMes.AutoSize = true;
             this.lblMes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMes.Location = new System.Drawing.Point(537, 178);
+            this.lblMes.Location = new System.Drawing.Point(829, 52);
             this.lblMes.Margin = new System.Windows.Forms.Padding(0);
             this.lblMes.Name = "lblMes";
             this.lblMes.Size = new System.Drawing.Size(52, 20);
@@ -392,7 +580,7 @@ namespace Capa_presentacion
             this.lblCategoria.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategoria.Location = new System.Drawing.Point(172, 275);
+            this.lblCategoria.Location = new System.Drawing.Point(172, 267);
             this.lblCategoria.Margin = new System.Windows.Forms.Padding(0);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(97, 20);
@@ -404,7 +592,7 @@ namespace Capa_presentacion
             this.lblCuit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCuit.AutoSize = true;
             this.lblCuit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCuit.Location = new System.Drawing.Point(172, 221);
+            this.lblCuit.Location = new System.Drawing.Point(172, 218);
             this.lblCuit.Margin = new System.Windows.Forms.Padding(0);
             this.lblCuit.Name = "lblCuit";
             this.lblCuit.Size = new System.Drawing.Size(51, 20);
@@ -428,7 +616,7 @@ namespace Capa_presentacion
             this.lblLocalidad.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblLocalidad.AutoSize = true;
             this.lblLocalidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLocalidad.Location = new System.Drawing.Point(172, 128);
+            this.lblLocalidad.Location = new System.Drawing.Point(172, 132);
             this.lblLocalidad.Margin = new System.Windows.Forms.Padding(0);
             this.lblLocalidad.Name = "lblLocalidad";
             this.lblLocalidad.Size = new System.Drawing.Size(96, 20);
@@ -458,72 +646,6 @@ namespace Capa_presentacion
             this.lblId.Size = new System.Drawing.Size(38, 20);
             this.lblId.TabIndex = 15;
             this.lblId.Text = "ID: ";
-            // 
-            // guna2TextBox1
-            // 
-            this.guna2TextBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(648, 88);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "Descripción";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(268, 36);
-            this.guna2TextBox1.TabIndex = 27;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(537, 96);
-            this.label1.Margin = new System.Windows.Forms.Padding(0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 20);
-            this.label1.TabIndex = 28;
-            this.label1.Text = "Descripción:";
-            // 
-            // guna2TextBox2
-            // 
-            this.guna2TextBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(648, 130);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "Descripción";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(268, 36);
-            this.guna2TextBox2.TabIndex = 29;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.Control;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(537, 138);
-            this.label3.Margin = new System.Windows.Forms.Padding(0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 20);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "Descripción:";
             // 
             // PantallaRecibos
             // 
@@ -563,8 +685,8 @@ namespace Capa_presentacion
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
-        private Guna.UI2.WinForms.Guna2TextBox txtAnio;
-        private Guna.UI2.WinForms.Guna2TextBox txtMes;
+        private Guna.UI2.WinForms.Guna2TextBox txtAnioLineaUno;
+        private Guna.UI2.WinForms.Guna2TextBox txtMesLineaUno;
         private Guna.UI2.WinForms.Guna2Button btnCancelar;
         private System.Windows.Forms.Label lblImporte;
         private Guna.UI2.WinForms.Guna2Button btnImprimir;
@@ -577,12 +699,17 @@ namespace Capa_presentacion
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblId;
         private Guna.UI2.WinForms.Guna2TextBox txtImporte;
-        private Guna.UI2.WinForms.Guna2TextBox txtDescripcion;
-        private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2TextBox txtLineaUno;
+        private System.Windows.Forms.Label lblLineaUno;
         private System.Windows.Forms.Label label9;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2TextBox txtLineaTres;
+        private System.Windows.Forms.Label lblLineaTres;
+        private Guna.UI2.WinForms.Guna2TextBox txtLineaDos;
+        private System.Windows.Forms.Label lblLineaDos;
+        private Guna.UI2.WinForms.Guna2TextBox txtAnioLineaTres;
+        private Guna.UI2.WinForms.Guna2TextBox txtAnioLineaDos;
+        private Guna.UI2.WinForms.Guna2TextBox txtMesLineaTres;
+        private Guna.UI2.WinForms.Guna2TextBox txtMesLineaDos;
+        private Guna.UI2.WinForms.Guna2Button btnAgregarLinea;
     }
 }
