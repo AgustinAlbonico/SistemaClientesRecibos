@@ -297,15 +297,23 @@ namespace Capa_presentacion {
             
             private global::System.Data.DataColumn columnimporte;
             
-            private global::System.Data.DataColumn columndescripcion;
+            private global::System.Data.DataColumn columndescripcion_linea_uno;
             
-            private global::System.Data.DataColumn columnmes_comprobante;
+            private global::System.Data.DataColumn columnmes_comprobante_linea_uno;
             
-            private global::System.Data.DataColumn columnanio_comprobante;
+            private global::System.Data.DataColumn columnanio_comprobante_linea_uno;
             
-            private global::System.Data.DataColumn columndetalle_2;
+            private global::System.Data.DataColumn columndescripcion_linea_dos;
             
-            private global::System.Data.DataColumn columndetalle_3;
+            private global::System.Data.DataColumn columnmes_comprobante_linea_dos;
+            
+            private global::System.Data.DataColumn columnanio_comprobante_linea_dos;
+            
+            private global::System.Data.DataColumn columndescripcion_linea_tres;
+            
+            private global::System.Data.DataColumn columnmes_comprobante_linea_tres;
+            
+            private global::System.Data.DataColumn columnanio_comprobante_linea_tres;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -414,41 +422,73 @@ namespace Capa_presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn descripcionColumn {
+            public global::System.Data.DataColumn descripcion_linea_unoColumn {
                 get {
-                    return this.columndescripcion;
+                    return this.columndescripcion_linea_uno;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn mes_comprobanteColumn {
+            public global::System.Data.DataColumn mes_comprobante_linea_unoColumn {
                 get {
-                    return this.columnmes_comprobante;
+                    return this.columnmes_comprobante_linea_uno;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn anio_comprobanteColumn {
+            public global::System.Data.DataColumn anio_comprobante_linea_unoColumn {
                 get {
-                    return this.columnanio_comprobante;
+                    return this.columnanio_comprobante_linea_uno;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn detalle_2Column {
+            public global::System.Data.DataColumn descripcion_linea_dosColumn {
                 get {
-                    return this.columndetalle_2;
+                    return this.columndescripcion_linea_dos;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn detalle_3Column {
+            public global::System.Data.DataColumn mes_comprobante_linea_dosColumn {
                 get {
-                    return this.columndetalle_3;
+                    return this.columnmes_comprobante_linea_dos;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn anio_comprobante_linea_dosColumn {
+                get {
+                    return this.columnanio_comprobante_linea_dos;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn descripcion_linea_tresColumn {
+                get {
+                    return this.columndescripcion_linea_tres;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn mes_comprobante_linea_tresColumn {
+                get {
+                    return this.columnmes_comprobante_linea_tres;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn anio_comprobante_linea_tresColumn {
+                get {
+                    return this.columnanio_comprobante_linea_tres;
                 }
             }
             
@@ -489,7 +529,25 @@ namespace Capa_presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DatatableReciboRow AddDatatableReciboRow(short nro_comprobante, short id_cliente, string nombre, short cod_postal, string localidad, string categoria, string provincia, string cuit, decimal importe, string descripcion, short mes_comprobante, short anio_comprobante, string detalle_2, string detalle_3) {
+            public DatatableReciboRow AddDatatableReciboRow(
+                        short nro_comprobante, 
+                        short id_cliente, 
+                        string nombre, 
+                        short cod_postal, 
+                        string localidad, 
+                        string categoria, 
+                        string provincia, 
+                        string cuit, 
+                        decimal importe, 
+                        string descripcion_linea_uno, 
+                        short mes_comprobante_linea_uno, 
+                        short anio_comprobante_linea_uno, 
+                        string descripcion_linea_dos, 
+                        string mes_comprobante_linea_dos, 
+                        string anio_comprobante_linea_dos, 
+                        string descripcion_linea_tres, 
+                        string mes_comprobante_linea_tres, 
+                        string anio_comprobante_linea_tres) {
                 DatatableReciboRow rowDatatableReciboRow = ((DatatableReciboRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         nro_comprobante,
@@ -501,11 +559,15 @@ namespace Capa_presentacion {
                         provincia,
                         cuit,
                         importe,
-                        descripcion,
-                        mes_comprobante,
-                        anio_comprobante,
-                        detalle_2,
-                        detalle_3};
+                        descripcion_linea_uno,
+                        mes_comprobante_linea_uno,
+                        anio_comprobante_linea_uno,
+                        descripcion_linea_dos,
+                        mes_comprobante_linea_dos,
+                        anio_comprobante_linea_dos,
+                        descripcion_linea_tres,
+                        mes_comprobante_linea_tres,
+                        anio_comprobante_linea_tres};
                 rowDatatableReciboRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDatatableReciboRow);
                 return rowDatatableReciboRow;
@@ -537,11 +599,15 @@ namespace Capa_presentacion {
                 this.columnprovincia = base.Columns["provincia"];
                 this.columncuit = base.Columns["cuit"];
                 this.columnimporte = base.Columns["importe"];
-                this.columndescripcion = base.Columns["descripcion"];
-                this.columnmes_comprobante = base.Columns["mes_comprobante"];
-                this.columnanio_comprobante = base.Columns["anio_comprobante"];
-                this.columndetalle_2 = base.Columns["detalle_2"];
-                this.columndetalle_3 = base.Columns["detalle_3"];
+                this.columndescripcion_linea_uno = base.Columns["descripcion_linea_uno"];
+                this.columnmes_comprobante_linea_uno = base.Columns["mes_comprobante_linea_uno"];
+                this.columnanio_comprobante_linea_uno = base.Columns["anio_comprobante_linea_uno"];
+                this.columndescripcion_linea_dos = base.Columns["descripcion_linea_dos"];
+                this.columnmes_comprobante_linea_dos = base.Columns["mes_comprobante_linea_dos"];
+                this.columnanio_comprobante_linea_dos = base.Columns["anio_comprobante_linea_dos"];
+                this.columndescripcion_linea_tres = base.Columns["descripcion_linea_tres"];
+                this.columnmes_comprobante_linea_tres = base.Columns["mes_comprobante_linea_tres"];
+                this.columnanio_comprobante_linea_tres = base.Columns["anio_comprobante_linea_tres"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -565,16 +631,24 @@ namespace Capa_presentacion {
                 base.Columns.Add(this.columncuit);
                 this.columnimporte = new global::System.Data.DataColumn("importe", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnimporte);
-                this.columndescripcion = new global::System.Data.DataColumn("descripcion", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columndescripcion);
-                this.columnmes_comprobante = new global::System.Data.DataColumn("mes_comprobante", typeof(short), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnmes_comprobante);
-                this.columnanio_comprobante = new global::System.Data.DataColumn("anio_comprobante", typeof(short), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnanio_comprobante);
-                this.columndetalle_2 = new global::System.Data.DataColumn("detalle_2", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columndetalle_2);
-                this.columndetalle_3 = new global::System.Data.DataColumn("detalle_3", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columndetalle_3);
+                this.columndescripcion_linea_uno = new global::System.Data.DataColumn("descripcion_linea_uno", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndescripcion_linea_uno);
+                this.columnmes_comprobante_linea_uno = new global::System.Data.DataColumn("mes_comprobante_linea_uno", typeof(short), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmes_comprobante_linea_uno);
+                this.columnanio_comprobante_linea_uno = new global::System.Data.DataColumn("anio_comprobante_linea_uno", typeof(short), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnanio_comprobante_linea_uno);
+                this.columndescripcion_linea_dos = new global::System.Data.DataColumn("descripcion_linea_dos", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndescripcion_linea_dos);
+                this.columnmes_comprobante_linea_dos = new global::System.Data.DataColumn("mes_comprobante_linea_dos", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmes_comprobante_linea_dos);
+                this.columnanio_comprobante_linea_dos = new global::System.Data.DataColumn("anio_comprobante_linea_dos", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnanio_comprobante_linea_dos);
+                this.columndescripcion_linea_tres = new global::System.Data.DataColumn("descripcion_linea_tres", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndescripcion_linea_tres);
+                this.columnmes_comprobante_linea_tres = new global::System.Data.DataColumn("mes_comprobante_linea_tres", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmes_comprobante_linea_tres);
+                this.columnanio_comprobante_linea_tres = new global::System.Data.DataColumn("anio_comprobante_linea_tres", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnanio_comprobante_linea_tres);
                 this.columnnro_comprobante.ReadOnly = true;
             }
             
@@ -863,83 +937,154 @@ namespace Capa_presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string descripcion {
+            public string descripcion_linea_uno {
                 get {
                     try {
-                        return ((string)(this[this.tableDatatableRecibo.descripcionColumn]));
+                        return ((string)(this[this.tableDatatableRecibo.descripcion_linea_unoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'descripcion\' de la tabla \'DatatableRecibo\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'descripcion_linea_uno\' de la tabla \'DatatableRecibo\' es D" +
+                                "BNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDatatableRecibo.descripcionColumn] = value;
+                    this[this.tableDatatableRecibo.descripcion_linea_unoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public short mes_comprobante {
+            public short mes_comprobante_linea_uno {
                 get {
                     try {
-                        return ((short)(this[this.tableDatatableRecibo.mes_comprobanteColumn]));
+                        return ((short)(this[this.tableDatatableRecibo.mes_comprobante_linea_unoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'mes_comprobante\' de la tabla \'DatatableRecibo\' es DBNull." +
-                                "", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'mes_comprobante_linea_uno\' de la tabla \'DatatableRecibo\' " +
+                                "es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDatatableRecibo.mes_comprobanteColumn] = value;
+                    this[this.tableDatatableRecibo.mes_comprobante_linea_unoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public short anio_comprobante {
+            public short anio_comprobante_linea_uno {
                 get {
                     try {
-                        return ((short)(this[this.tableDatatableRecibo.anio_comprobanteColumn]));
+                        return ((short)(this[this.tableDatatableRecibo.anio_comprobante_linea_unoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'anio_comprobante\' de la tabla \'DatatableRecibo\' es DBNull" +
-                                ".", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'anio_comprobante_linea_uno\' de la tabla \'DatatableRecibo\'" +
+                                " es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDatatableRecibo.anio_comprobanteColumn] = value;
+                    this[this.tableDatatableRecibo.anio_comprobante_linea_unoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string detalle_2 {
+            public string descripcion_linea_dos {
                 get {
                     try {
-                        return ((string)(this[this.tableDatatableRecibo.detalle_2Column]));
+                        return ((string)(this[this.tableDatatableRecibo.descripcion_linea_dosColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'detalle_2\' de la tabla \'DatatableRecibo\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'descripcion_linea_dos\' de la tabla \'DatatableRecibo\' es D" +
+                                "BNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDatatableRecibo.detalle_2Column] = value;
+                    this[this.tableDatatableRecibo.descripcion_linea_dosColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string detalle_3 {
+            public string mes_comprobante_linea_dos {
                 get {
                     try {
-                        return ((string)(this[this.tableDatatableRecibo.detalle_3Column]));
+                        return ((string)(this[this.tableDatatableRecibo.mes_comprobante_linea_dosColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'detalle_3\' de la tabla \'DatatableRecibo\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'mes_comprobante_linea_dos\' de la tabla \'DatatableRecibo\' " +
+                                "es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDatatableRecibo.detalle_3Column] = value;
+                    this[this.tableDatatableRecibo.mes_comprobante_linea_dosColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string anio_comprobante_linea_dos {
+                get {
+                    try {
+                        return ((string)(this[this.tableDatatableRecibo.anio_comprobante_linea_dosColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'anio_comprobante_linea_dos\' de la tabla \'DatatableRecibo\'" +
+                                " es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDatatableRecibo.anio_comprobante_linea_dosColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string descripcion_linea_tres {
+                get {
+                    try {
+                        return ((string)(this[this.tableDatatableRecibo.descripcion_linea_tresColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'descripcion_linea_tres\' de la tabla \'DatatableRecibo\' es " +
+                                "DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDatatableRecibo.descripcion_linea_tresColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string mes_comprobante_linea_tres {
+                get {
+                    try {
+                        return ((string)(this[this.tableDatatableRecibo.mes_comprobante_linea_tresColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'mes_comprobante_linea_tres\' de la tabla \'DatatableRecibo\'" +
+                                " es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDatatableRecibo.mes_comprobante_linea_tresColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string anio_comprobante_linea_tres {
+                get {
+                    try {
+                        return ((string)(this[this.tableDatatableRecibo.anio_comprobante_linea_tresColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'anio_comprobante_linea_tres\' de la tabla \'DatatableRecibo" +
+                                "\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDatatableRecibo.anio_comprobante_linea_tresColumn] = value;
                 }
             }
             
@@ -1053,62 +1198,110 @@ namespace Capa_presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsdescripcionNull() {
-                return this.IsNull(this.tableDatatableRecibo.descripcionColumn);
+            public bool Isdescripcion_linea_unoNull() {
+                return this.IsNull(this.tableDatatableRecibo.descripcion_linea_unoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetdescripcionNull() {
-                this[this.tableDatatableRecibo.descripcionColumn] = global::System.Convert.DBNull;
+            public void Setdescripcion_linea_unoNull() {
+                this[this.tableDatatableRecibo.descripcion_linea_unoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool Ismes_comprobanteNull() {
-                return this.IsNull(this.tableDatatableRecibo.mes_comprobanteColumn);
+            public bool Ismes_comprobante_linea_unoNull() {
+                return this.IsNull(this.tableDatatableRecibo.mes_comprobante_linea_unoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void Setmes_comprobanteNull() {
-                this[this.tableDatatableRecibo.mes_comprobanteColumn] = global::System.Convert.DBNull;
+            public void Setmes_comprobante_linea_unoNull() {
+                this[this.tableDatatableRecibo.mes_comprobante_linea_unoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool Isanio_comprobanteNull() {
-                return this.IsNull(this.tableDatatableRecibo.anio_comprobanteColumn);
+            public bool Isanio_comprobante_linea_unoNull() {
+                return this.IsNull(this.tableDatatableRecibo.anio_comprobante_linea_unoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void Setanio_comprobanteNull() {
-                this[this.tableDatatableRecibo.anio_comprobanteColumn] = global::System.Convert.DBNull;
+            public void Setanio_comprobante_linea_unoNull() {
+                this[this.tableDatatableRecibo.anio_comprobante_linea_unoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool Isdetalle_2Null() {
-                return this.IsNull(this.tableDatatableRecibo.detalle_2Column);
+            public bool Isdescripcion_linea_dosNull() {
+                return this.IsNull(this.tableDatatableRecibo.descripcion_linea_dosColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void Setdetalle_2Null() {
-                this[this.tableDatatableRecibo.detalle_2Column] = global::System.Convert.DBNull;
+            public void Setdescripcion_linea_dosNull() {
+                this[this.tableDatatableRecibo.descripcion_linea_dosColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool Isdetalle_3Null() {
-                return this.IsNull(this.tableDatatableRecibo.detalle_3Column);
+            public bool Ismes_comprobante_linea_dosNull() {
+                return this.IsNull(this.tableDatatableRecibo.mes_comprobante_linea_dosColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void Setdetalle_3Null() {
-                this[this.tableDatatableRecibo.detalle_3Column] = global::System.Convert.DBNull;
+            public void Setmes_comprobante_linea_dosNull() {
+                this[this.tableDatatableRecibo.mes_comprobante_linea_dosColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isanio_comprobante_linea_dosNull() {
+                return this.IsNull(this.tableDatatableRecibo.anio_comprobante_linea_dosColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setanio_comprobante_linea_dosNull() {
+                this[this.tableDatatableRecibo.anio_comprobante_linea_dosColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isdescripcion_linea_tresNull() {
+                return this.IsNull(this.tableDatatableRecibo.descripcion_linea_tresColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setdescripcion_linea_tresNull() {
+                this[this.tableDatatableRecibo.descripcion_linea_tresColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Ismes_comprobante_linea_tresNull() {
+                return this.IsNull(this.tableDatatableRecibo.mes_comprobante_linea_tresColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setmes_comprobante_linea_tresNull() {
+                this[this.tableDatatableRecibo.mes_comprobante_linea_tresColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isanio_comprobante_linea_tresNull() {
+                return this.IsNull(this.tableDatatableRecibo.anio_comprobante_linea_tresColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setanio_comprobante_linea_tresNull() {
+                this[this.tableDatatableRecibo.anio_comprobante_linea_tresColumn] = global::System.Convert.DBNull;
             }
         }
         

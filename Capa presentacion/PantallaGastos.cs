@@ -10,8 +10,6 @@ using Capa_negocio.Negocio;
 using System.Windows.Forms;
 using Capa_entidades.Entidades;
 using System.Globalization;
-using Capa_negocio.Negocio;
-using Capa_entidades.Entidades;
 using Capa_dominio.Negocio;
 
 namespace Capa_presentacion
@@ -27,6 +25,7 @@ namespace Capa_presentacion
             InitializeComponent();
             WindowState = FormWindowState.Maximized;
             MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            txtFecha.Value = DateTime.Now;
         }
 
         private void btnClose_Click(object sender, EventArgs e)

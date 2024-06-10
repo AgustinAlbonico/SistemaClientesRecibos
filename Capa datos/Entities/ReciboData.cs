@@ -14,20 +14,24 @@ namespace Capa_datos.Entities
         SqlDataReader dr;
         DataTable dt = new DataTable();
 
-        public DataTable getReciboFormulario(int id_cliente, string lineaUno, float importe, int mes, int anio)
+        public DataTable getReciboFormulario(int id_cliente, float importe, string lineaUno, int mesLineaUno, int anioLineaUno, string lineaDos, int mesLineaDos, int anioLineaDos, string lineaTres, int mesLineaTres, int anioLineaTres)
         {
             try
             {
-                Console.WriteLine(lineaUno, importe, mes, anio, id_cliente);
-
                 cmd.Connection = this.OpenConnection();
                 cmd.CommandText = "sp_CrearReciboNuevo";
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("id_cliente", id_cliente);
-                cmd.Parameters.AddWithValue("desc", lineaUno);
                 cmd.Parameters.AddWithValue("importe", importe);
-                cmd.Parameters.AddWithValue("mes", mes);
-                cmd.Parameters.AddWithValue("anio", anio);
+                cmd.Parameters.AddWithValue("desc_linea_uno", lineaUno);
+                cmd.Parameters.AddWithValue("mes_linea_uno", mesLineaUno);
+                cmd.Parameters.AddWithValue("anio_linea_uno", anioLineaUno);
+                cmd.Parameters.AddWithValue("desc_linea_dos", lineaDos);
+                cmd.Parameters.AddWithValue("mes_linea_dos", mesLineaDos);
+                cmd.Parameters.AddWithValue("anio_linea_dos", anioLineaDos);
+                cmd.Parameters.AddWithValue("desc_linea_tres", lineaTres);
+                cmd.Parameters.AddWithValue("mes_linea_tres", mesLineaTres);
+                cmd.Parameters.AddWithValue("anio_linea_tres", anioLineaTres);
                 cmd.ExecuteNonQuery();
                 cmd.Parameters.Clear();
 

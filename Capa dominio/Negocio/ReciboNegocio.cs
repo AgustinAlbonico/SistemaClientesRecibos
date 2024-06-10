@@ -32,7 +32,7 @@ namespace Capa_negocio.Negocio
             DataTable dataRecibo = new DataTable();
             try
             {
-                dataRecibo = rd.getReciboFormulario(re.Cliente.ID, re.LineaUno, re.Importe, re.MesLineaUno, re.AnioLineaUno);
+                dataRecibo = rd.getReciboFormulario(re.Cliente.ID, re.Importe, re.LineaUno, re.MesLineaUno, re.AnioLineaUno, re.LineaDos, re.MesLineaDos, re.AnioLineaDos, re.LineaTres, re.MesLineaTres, re.AnioLineaTres);
             }catch(Exception ex)
             {
                 throw ex;
@@ -50,7 +50,7 @@ namespace Capa_negocio.Negocio
             } catch (Exception ex)
             {
                 throw ex;
-            }
+            } 
             return dataRecibos;
         }
 
