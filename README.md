@@ -1,6 +1,6 @@
 # Sistema de Gestión de Clientes
 
-Este sistema está diseñado para la gestión de clientes, la emisión de recibos de pago y el control de caja diaria. El proyecto ha sido desarrollado en C# utilizando ADO .NET, WinForms, Crystal Reports y SQL Server.
+Sistema está diseñado para la gestión de clientes, la emisión de recibos de pago y el control de caja diaria. El proyecto se desarrolló en C# utilizando ADO .NET, WinForms, Crystal Reports y SQL Server.
 
 ## Características
 
