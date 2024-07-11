@@ -243,7 +243,7 @@ namespace Capa_presentacion
             this.btnLibroDiario.Name = "btnLibroDiario";
             this.btnLibroDiario.Size = new System.Drawing.Size(221, 76);
             this.btnLibroDiario.TabIndex = 14;
-            this.btnLibroDiario.Text = "Libro diario";
+            this.btnLibroDiario.Text = "Caja";
             this.btnLibroDiario.Click += new System.EventHandler(this.btnLibroDiario_Click);
             // 
             // btnGastos

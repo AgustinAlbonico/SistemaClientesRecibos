@@ -42,3 +42,14 @@ C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\obj\Debug\Capa 
 C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\obj\Debug\Capa negocio.csproj.CopyComplete
 C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\obj\Debug\Capa dominio.dll
 C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\obj\Debug\Capa dominio.pdb
+D:\Cosas Generales\Programacion\sistema-crud-clientesyrecibos\Capa dominio\bin\Debug\Capa dominio.dll
+D:\Cosas Generales\Programacion\sistema-crud-clientesyrecibos\Capa dominio\bin\Debug\Capa dominio.pdb
+D:\Cosas Generales\Programacion\sistema-crud-clientesyrecibos\Capa dominio\bin\Debug\Capa datos.dll
+D:\Cosas Generales\Programacion\sistema-crud-clientesyrecibos\Capa dominio\bin\Debug\Capa entidades.dll
+D:\Cosas Generales\Programacion\sistema-crud-clientesyrecibos\Capa dominio\bin\Debug\Capa datos.pdb
+D:\Cosas Generales\Programacion\sistema-crud-clientesyrecibos\Capa dominio\bin\Debug\Capa entidades.pdb
+D:\Cosas Generales\Programacion\sistema-crud-clientesyrecibos\Capa dominio\obj\Debug\Capa negocio.csproj.AssemblyReference.cache
+D:\Cosas Generales\Programacion\sistema-crud-clientesyrecibos\Capa dominio\obj\Debug\Capa negocio.csproj.CoreCompileInputs.cache
+D:\Cosas Generales\Programacion\sistema-crud-clientesyrecibos\Capa dominio\obj\Debug\Capa negocio.csproj.CopyComplete
+D:\Cosas Generales\Programacion\sistema-crud-clientesyrecibos\Capa dominio\obj\Debug\Capa dominio.dll
+D:\Cosas Generales\Programacion\sistema-crud-clientesyrecibos\Capa dominio\obj\Debug\Capa dominio.pdb

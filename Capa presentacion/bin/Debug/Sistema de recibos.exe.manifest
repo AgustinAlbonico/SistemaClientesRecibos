@@ -43,38 +43,38 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Capa datos.dll" size="11264">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Capa datos.dll" size="12800">
       <assemblyIdentity name="Capa datos" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>rUYta4kLZsUqxfZ6rV7va1cHaSmxBgfBOppR7fW75rA=</dsig:DigestValue>
+        <dsig:DigestValue>cltJ5XjNdJf+4g4Z5MK6nrYkPwfCnqznIU1lMkxtHyw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Capa dominio.dll" size="7680">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Capa dominio.dll" size="8192">
       <assemblyIdentity name="Capa dominio" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>M2YipcC0ruDpMr3lJW2UwuXxmlMr8jkpywb+Ez8YB78=</dsig:DigestValue>
+        <dsig:DigestValue>q9tw4GxFHBE19QavP7BCoxA8xoYTEFcuh+1kj+j/hAo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Capa entidades.dll" size="7680">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Capa entidades.dll" size="8192">
       <assemblyIdentity name="Capa entidades" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>XvssPYQFabjsLHfVFRO/6/lk4JaOFFO4bqBGKUrFGPk=</dsig:DigestValue>
+        <dsig:DigestValue>WfS9QMP4VzJAWMLhrr54GDLzK5UHE5cu79EgW9ZysTg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -175,14 +175,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Sistema de recibos.exe" size="459672">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Sistema de recibos.exe" size="471448">
       <assemblyIdentity name="Sistema de recibos" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>nNtUV9Exdm9RGPs3ruXPtJow+pjWXfB4o/Kg26kadB8=</dsig:DigestValue>
+        <dsig:DigestValue>5n24EM11KHEEYsE5FKUM5PrfDqzj897aO7zE2+zFE/8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

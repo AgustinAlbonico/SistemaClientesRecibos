@@ -28,12 +28,6 @@ namespace Capa_presentacion
 
             mesActual = fechaActual.Month;
             anioActual = fechaActual.Year;
-            if (mesActual != 1)
-            { mesActual = mesActual - 1; }
-            else
-            {
-                mesActual = 12;
-            }
 
             txtMes.Text = mesActual.ToString();
             txtAnio.Text = anioActual.ToString();
@@ -208,6 +202,35 @@ namespace Capa_presentacion
         {
             txtAnio.SelectionStart = txtAnio.Text.Length;
             txtAnio.SelectionLength = 0;
+        }
+
+        private void btnEliminarRecibo_Click(object sender, EventArgs e)
+        {
+            ReciboNegocio rn = new ReciboNegocio();
+            if (dgvRecibos.SelectedRows.Count == 0) { MessageBox.Show("No hay ningun recibo seleccionado!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            else
+            {
+
+                string nroReciboCompleto = dgvRecibos.CurrentRow.Cells[5].Value.ToString();
+
+                DialogResult respuesta = MessageBox.Show("Seguro que desea borrar el recibo " + nroReciboCompleto + "?", "Confirmar eliminacion", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+                if (respuesta == DialogResult.OK)
+                {
+                    try
+                    {
+                        string[] parts = nroReciboCompleto.Split('-');
+                        int nro_comprobante = int.Parse(parts[1]);
+                        rn.eliminarRecibo(nro_comprobante);
+                        MessageBox.Show("Recibo eliminado con exito", "Exito!");
+                        getData();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.ToString());
+                    }
+                }
+            }
         }
     }
 }

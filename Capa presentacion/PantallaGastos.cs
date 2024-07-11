@@ -75,7 +75,8 @@ namespace Capa_presentacion
                         {
                             ge.Fecha = txtFecha.Value;
                             ge.Descripcion = txtDescripcion.Text;
-                            ge.Importe = float.Parse(txtImporte.Text, CultureInfo.InvariantCulture);
+                            string gastoAux = txtImporte.Text.Replace(',', '.');
+                            ge.Importe = float.Parse(gastoAux, CultureInfo.InvariantCulture);
 
                             gn.crearGasto(ge);
 

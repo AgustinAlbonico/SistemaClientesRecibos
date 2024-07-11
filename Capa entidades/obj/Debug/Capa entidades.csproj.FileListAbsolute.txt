@@ -19,4 +19,9 @@ C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa entidades\bin\Debug\Cap
 C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa entidades\obj\Debug\Capa entidades.csproj.CoreCompileInputs.cache
 C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa entidades\obj\Debug\Capa entidades.dll
 C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa entidades\obj\Debug\Capa entidades.pdb
-C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa entidades\obj\Debug\Capa entidades.csproj.AssemblyReference.cache
+D:\Cosas Generales\Programacion\sistema-crud-clientesyrecibos\Capa entidades\bin\Debug\Capa entidades.dll
+D:\Cosas Generales\Programacion\sistema-crud-clientesyrecibos\Capa entidades\bin\Debug\Capa entidades.pdb
+D:\Cosas Generales\Programacion\sistema-crud-clientesyrecibos\Capa entidades\obj\Debug\Capa entidades.csproj.AssemblyReference.cache
+D:\Cosas Generales\Programacion\sistema-crud-clientesyrecibos\Capa entidades\obj\Debug\Capa entidades.csproj.CoreCompileInputs.cache
+D:\Cosas Generales\Programacion\sistema-crud-clientesyrecibos\Capa entidades\obj\Debug\Capa entidades.dll
+D:\Cosas Generales\Programacion\sistema-crud-clientesyrecibos\Capa entidades\obj\Debug\Capa entidades.pdb

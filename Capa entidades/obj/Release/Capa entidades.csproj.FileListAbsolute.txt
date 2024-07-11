@@ -1,0 +1,6 @@
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa entidades\bin\Release\Capa entidades.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa entidades\bin\Release\Capa entidades.pdb
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa entidades\obj\Release\Capa entidades.csproj.AssemblyReference.cache
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa entidades\obj\Release\Capa entidades.csproj.CoreCompileInputs.cache
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa entidades\obj\Release\Capa entidades.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa entidades\obj\Release\Capa entidades.pdb

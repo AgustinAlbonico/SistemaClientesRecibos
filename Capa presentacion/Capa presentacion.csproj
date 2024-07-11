@@ -158,6 +158,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatasetRecibo.xsd</DependentUpon>
     </Compile>
+    <Compile Include="PantallaCajaPorDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaCajaPorDia.Designer.cs">
+      <DependentUpon>PantallaCajaPorDia.cs</DependentUpon>
+    </Compile>
     <Compile Include="PantallaLibroDiario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +214,9 @@
       <DependentUpon>Reporte.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="PantallaCajaPorDia.resx">
+      <DependentUpon>PantallaCajaPorDia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PantallaLibroDiario.resx">
       <DependentUpon>PantallaLibroDiario.cs</DependentUpon>
     </EmbeddedResource>

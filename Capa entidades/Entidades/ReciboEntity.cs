@@ -42,5 +42,16 @@ namespace Capa_entidades.Entidades
         {
             Cliente = new ClienteEntity();
         }
+
+        // Método ToString para obtener representación de cadena del objeto
+        public override string ToString()
+        {
+            return $"Recibo #{_NroRecibo} - Importe: {_Importe:C}\n" +
+                   $"Fecha y Hora de Emisión: {_FechaHoraEmision}\n" +
+                   $"Cliente: {_Cliente.Nombre}\n" +
+                   $"Línea 1: {_LineaUno} (Mes {_MesLineaUno}, Año {_AnioLineaUno})\n" +
+                   $"Línea 2: {_LineaDos} (Mes {_MesLineaDos}, Año {_AnioLineaDos})\n" +
+                   $"Línea 3: {_LineaTres} (Mes {_MesLineaTres}, Año {_AnioLineaTres})";
+        }
     }
 }

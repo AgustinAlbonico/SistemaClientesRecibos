@@ -54,6 +54,20 @@ namespace Capa_negocio.Negocio
             return dataRecibos;
         }
 
+        public DataTable detalleCajaPorDia(string fecha)
+        {
+            DataTable dataCaja = new DataTable();
+            try
+            {
+                dataCaja = rd.detalleCajaPorDia(fecha);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return dataCaja;
+        }
+
         public DataTable getRecibo(int id_recibo)
         {
             DataTable recibo = new DataTable();
@@ -66,6 +80,46 @@ namespace Capa_negocio.Negocio
                 throw ex;
             }
             return recibo;
+        }
+
+        public void eliminarRecibo(int nro_comprobante)
+        {
+            try
+            {
+                rd.eliminarRecibo(nro_comprobante);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public float getSaldoPorMesAnio(int mes, int anio)
+        {
+            float saldo;
+            try
+            {
+                saldo = rd.getSaldoPorMesAnio(mes, anio);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return saldo;
+        }
+
+        public float getSaldoPorDia(string fecha)
+        {
+            float saldo;
+            try
+            {
+                saldo = rd.getSaldoPorFecha(fecha);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return saldo;
         }
     }
 }

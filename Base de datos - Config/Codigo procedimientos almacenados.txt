@@ -1,20 +1,4 @@
-CREATE PROCEDURE sp_CrearReciboNuevo
-	@id_cliente int, @desc varchar(100), @importe real, @mes int, @anio int
-AS
-	BEGIN;
-
-		DECLARE @contador int;
-
-		SELECT @contador = contador FROM sistema WHERE id_sistema = 1;
-
-		INSERT INTO recibos(id_cliente, descripcion, importe, mes_comprobante, anio_comprobante, nro_comprobante)
-		VALUES (@id_cliente, @desc, @importe, @mes, @anio, @contador);
-
-		UPDATE sistema SET contador = contador + 1 WHERE id_sistema = 1;
-	END
-
-
-CREATE PROCEDURE sp_BuscarUltimoRecibo
+CREATE PROCEDURE [dbo].[sp_BuscarUltimoRecibo]
 AS
 	SELECT * FROM db_sistema_recibos.dbo.recibos r 
 		INNER JOIN clientes c 
@@ -22,16 +6,38 @@ AS
 		WHERE id_recibo = @@IDENTITY;
 GO
 
-CREATE PROCEDURE sp_RecibosPorMesYAnio
-@mes int, @anio int
+CREATE PROCEDURE [dbo].[sp_CrearGasto]
+	@desc varchar(80), @importe float, @fecha Date
 AS
-	SELECT r.id_recibo, r.id_cliente, c.nombre, c.cuit, c.categoria, r.nro_comprobante, r.fecha_emision_comprobante, r.descripcion, r.importe FROM recibos r
-	INNER JOIN clientes c
-		ON c.id_cliente = r.id_cliente
-	WHERE r.mes_comprobante = @mes AND r.anio_comprobante = @anio
+	BEGIN
+		INSERT INTO gastos(descripcion, importe, fecha) 
+		VALUES(@desc, @importe, @fecha);
+	END
 GO
 
-CREATE PROCEDURE sp_IngresosDelDia
+CREATE PROCEDURE [dbo].[sp_CrearReciboNuevo]
+	@id_cliente int, @importe real, 
+	@desc_linea_uno varchar(100), @mes_linea_uno int, @anio_linea_uno int, 
+	@desc_linea_dos varchar(100) = null, @mes_linea_dos int = null, @anio_linea_dos int = null,
+	@desc_linea_tres varchar(100) = null, @mes_linea_tres int = null, @anio_linea_tres int = null
+AS
+	BEGIN;
+
+		DECLARE @contador int;
+
+		SELECT @contador = contador FROM sistema WHERE id_sistema = 1;
+
+		INSERT INTO recibos(id_cliente, importe, nro_comprobante, descripcion_linea_uno, mes_comprobante_linea_uno, anio_comprobante_linea_uno, 
+		descripcion_linea_dos, mes_comprobante_linea_dos, anio_comprobante_linea_dos,
+		descripcion_linea_tres, mes_comprobante_linea_tres, anio_comprobante_linea_tres)
+		VALUES (@id_cliente, @importe, @contador, @desc_linea_uno, @mes_linea_uno, @anio_linea_uno,
+		@desc_linea_dos, @mes_linea_dos, @anio_linea_dos, @desc_linea_tres, @mes_linea_tres, @anio_linea_tres);
+
+		UPDATE sistema SET contador = contador + 1 WHERE id_sistema = 1;
+	END
+GO
+
+CREATE PROCEDURE [dbo].[sp_IngresosDelDia]
 	@fecha_ingresada DATE
 AS
 	BEGIN;
@@ -39,10 +45,18 @@ AS
 			group by CAST(fecha_emision_comprobante AS DATE)
 			having CAST(fecha_emision_comprobante AS DATE) = @fecha_ingresada
 	END
+GO
 
+CREATE PROCEDURE [dbo].[sp_IngresosDelMesYAnio]
+	@mes_ingresado int, @anio_ingresado int
+AS
+	BEGIN;
+		SELECT SUM(importe) ingresos FROM recibos 
+			WHERE YEAR(CAST(fecha_emision_comprobante AS DATE)) = @anio_ingresado AND MONTH(CAST(fecha_emision_comprobante AS DATE)) = @mes_ingresado
+	END
+GO
 
-
-CREATE PROCEDURE sp_IngresosEgresosPorDia
+CREATE PROCEDURE [dbo].[sp_IngresosEgresosPorDia]
 	@mes_ingresado int, @anio_ingresado int
 AS
 	BEGIN
@@ -69,7 +83,7 @@ AS
 			WHERE MONTH(g.fecha) = @mes_ingresado and YEAR(g.fecha) = @anio_ingresado
 			GROUP BY g.fecha
 
-		SELECT COALESCE(ti.fecha, te.fecha) AS fecha, ISNULL(ingresos, 0) AS ingresos, ISNULL(egresos, 0) AS egresos, ISNULL(ingresos, 0) - ISNULL(egresos, 0) AS saldo FROM #TablaIngresos ti
+		SELECT COALESCE(ti.fecha, te.fecha) AS fecha, ISNULL(ti.ingresos, 0) AS ingresos, ISNULL(egresos, 0) AS egresos, ISNULL(ingresos, 0) - ISNULL(egresos, 0) AS saldo FROM #TablaIngresos ti
 			FULL OUTER JOIN #TablaEgresos te 
 			ON ti.fecha = te.fecha
 			ORDER BY fecha desc
@@ -78,12 +92,59 @@ AS
 		DROP TABLE #TablaEgresos
 
 	END
+GO
 
-CREATE PROCEDURE sp_CrearGasto
-	@desc varchar(80), @importe float, @fecha Date
+CREATE PROCEDURE [dbo].[sp_RecibosPorMesYAnio]
+@mes int, @anio int
 AS
-	BEGIN
-		INSERT INTO gastos(descripcion, importe, fecha) 
-		VALUES(@desc, @importe, @fecha);
+	SELECT r.id_recibo, r.id_cliente, c.nombre, c.cuit, c.categoria, r.nro_comprobante, r.fecha_emision_comprobante, r.descripcion_linea_uno, r.importe FROM recibos r
+	INNER JOIN clientes c
+		ON c.id_cliente = r.id_cliente
+	WHERE MONTH(r.fecha_emision_comprobante) = @mes AND YEAR(r.fecha_emision_comprobante) = @anio
+GO
+
+CREATE PROCEDURE [dbo].[sp_SaldoPorMes]
+	@mes int, @anio int
+AS
+	BEGIN;
+		
+		DECLARE @ingresos float;
+		DECLARE @egresos float;
+
+		SELECT @ingresos = COALESCE(SUM(ROUND(recibos.importe, 2)), 0) FROM recibos WHERE MONTH(recibos.fecha_emision_comprobante) = @mes AND YEAR(recibos.fecha_emision_comprobante) = @anio
+
+		SELECT @egresos = COALESCE(SUM(ROUND(gastos.importe, 2)), 0) FROM gastos WHERE MONTH(gastos.fecha) = @mes AND YEAR(gastos.fecha) = @anio
+
+		SELECT @ingresos - @egresos as saldo
 	END
 
+CREATE PROCEDURE [dbo].[sp_DetalleCajaPorDia]
+	@fecha varchar(15)
+AS
+	BEGIN;
+		SELECT CONCAT('Recibo Nro. 0000-', FORMAT(r.nro_comprobante, '00000000'), ' / ', c.nombre) as descripcion, r.importe as ingresos, null as egresos
+		from recibos r INNER JOIN clientes c ON c.id_cliente = r.id_cliente
+		WHERE FORMAT(r.fecha_emision_comprobante, 'dd/MM/yyyy') = @fecha
+
+		UNION
+
+		SELECT g.descripcion as descripcion, null as ingresos, g.importe as egresos
+		from gastos g 
+		WHERE FORMAT(g.fecha, 'dd/MM/yyyy') = @fecha
+	END;
+
+
+CREATE PROCEDURE [dbo].[sp_SaldoPorDia]
+	@fecha varchar(15)
+AS
+	BEGIN;
+		
+		DECLARE @ingresos float;
+		DECLARE @egresos float;
+
+		SELECT @ingresos = COALESCE(SUM(ROUND(recibos.importe, 2)), 0) FROM dbo.recibos WHERE FORMAT(recibos.fecha_emision_comprobante, 'dd/MM/yyyy') = @fecha
+
+		SELECT @egresos = COALESCE(SUM(ROUND(gastos.importe, 2)), 0) FROM dbo.gastos WHERE FORMAT(gastos.fecha, 'dd/MM/yyyy') = @fecha
+
+		SELECT COALESCE((@ingresos - @egresos), 0) as saldo
+	END

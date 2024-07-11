@@ -101,6 +101,96 @@ namespace Capa_datos.Entities
             return recibo;
         }
 
+        public void eliminarRecibo(int nro_comprobante)
+        {
+            DataTable recibo = new DataTable();
+            try
+            {
+                cmd.Connection = this.OpenConnection();
+                cmd.CommandText = "sp_EliminarRecibo";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("nro_comprobante", nro_comprobante);
+                cmd.ExecuteNonQuery();
+                cmd.Parameters.Clear();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                throw ex;
+            }
+            finally
+            {
+                this.CloseConnection();
+            }
+        }
+
+        public float getSaldoPorMesAnio(int mes, int anio)
+        {
+            float result = 0;
+            try
+            {
+                cmd.Connection = this.OpenConnection();
+                cmd.CommandText = "sp_SaldoPorMes";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("mes", mes);
+                cmd.Parameters.AddWithValue("anio", anio);
+                object res = cmd.ExecuteScalar();
+                result = float.Parse(res.ToString());
+                cmd.Parameters.Clear();
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally { this.CloseConnection(); }
+        }
+
+        public float getSaldoPorFecha(string fecha)
+        {
+            float result = 0;
+            try
+            {
+                cmd.Connection = this.OpenConnection();
+                cmd.CommandText = "sp_SaldoPorDia";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("fecha", fecha);
+                object res = cmd.ExecuteScalar();
+                result = float.Parse(res.ToString());
+                cmd.Parameters.Clear();
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally { this.CloseConnection(); }
+        }
+
+        public DataTable detalleCajaPorDia(string fecha)
+        {
+            try
+            {
+                cmd.Connection = this.OpenConnection();
+                cmd.CommandText = "sp_DetalleCajaPorDia";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("fecha", fecha);
+                dr = cmd.ExecuteReader();
+                dt.Load(dr);
+                cmd.Parameters.Clear();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw ex;
+            }
+            finally
+            {
+                this.CloseConnection();
+            }
+            return dt;
+        }
+
         //public DataTable getReciboFormulario2(int nro_cliente, string desc, float importe, int mes, int anio)
         //{
         //    DataTable dta = new DataTable();

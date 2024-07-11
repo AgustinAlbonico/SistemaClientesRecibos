@@ -1,0 +1,35 @@
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Release\Sistema de recibos.exe.config
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Release\Sistema de recibos.exe.manifest
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Release\Sistema de recibos.application
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Release\Sistema de recibos.exe
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Release\Sistema de recibos.pdb
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Release\Capa dominio.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Release\Capa entidades.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Release\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Release\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Release\CrystalDecisions.ReportSource.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Release\CrystalDecisions.Shared.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Release\CrystalDecisions.Windows.Forms.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Release\Guna.UI2.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Release\log4net.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Release\Capa datos.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Release\Capa dominio.pdb
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Release\Capa entidades.pdb
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Release\log4net.xml
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\bin\Release\Capa datos.pdb
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Release\Capa presentacion.csproj.AssemblyReference.cache
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Release\Capa_presentacion.PantallaLibroDiario.resources
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Release\Capa_presentacion.PantallaGastos.resources
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Release\Capa_presentacion.PanelClientes.resources
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Release\Capa_presentacion.Inicio.resources
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Release\Capa_presentacion.PantallaRecibos.resources
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Release\Capa_presentacion.Properties.Resources.resources
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Release\Capa_presentacion.Recibo.resources
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Release\Capa_presentacion.Recibos_Mensuales.resources
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Release\Capa presentacion.csproj.GenerateResource.cache
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Release\Capa presentacion.csproj.CoreCompileInputs.cache
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Release\Sistema de recibos.exe.manifest
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Release\Sistema de recibos.application
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Release\Capa presentacion.csproj.CopyComplete
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Release\Sistema de recibos.exe
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa presentacion\obj\Release\Sistema de recibos.pdb

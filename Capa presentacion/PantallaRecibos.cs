@@ -78,21 +78,19 @@ namespace Capa_presentacion
             re.AnioLineaUno = Int16.Parse(txtAnioLineaUno.Text);
             if (cantLineas > 1)
             {
-                if (cantLineas == 2)
-                {
-                    re.LineaDos = txtLineaDos.Text.ToUpper();
-                    re.MesLineaDos = Int16.Parse(txtMesLineaDos.Text);
-                    re.AnioLineaDos = Int16.Parse(txtAnioLineaDos.Text);
-                }
+                re.LineaDos = txtLineaDos.Text.ToUpper();
+                re.MesLineaDos = Int16.Parse(txtMesLineaDos.Text);
+                re.AnioLineaDos = Int16.Parse(txtAnioLineaDos.Text);
                 if (cantLineas == 3)
                 {
                     re.LineaTres = txtLineaTres.Text.ToUpper();
-                    re.MesLineaDos = Int16.Parse(txtMesLineaTres.Text);
+                    re.MesLineaTres = Int16.Parse(txtMesLineaTres.Text);
                     re.AnioLineaTres = Int16.Parse(txtAnioLineaTres.Text);
                 }
             }
-            re.Importe = float.Parse(txtImporte.Text, CultureInfo.InvariantCulture);
 
+            string gastoAux = txtImporte.Text.Replace(',', '.');
+            re.Importe = float.Parse(gastoAux, CultureInfo.InvariantCulture);
 
             DataTable dataRecibo = rn.crearYDevolverRecibo(re);
 
@@ -107,6 +105,7 @@ namespace Capa_presentacion
             //dataRecibo.Rows[0]["nro_recibo"] = nroFormated;
 
             //Muestro bien la categoria
+
             string categoriaFormated = "";
             switch (dataRecibo.Rows[0]["categoria"])
             {
@@ -152,72 +151,74 @@ namespace Capa_presentacion
                             MessageBox.Show("El año ingresado no es valido", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             error = true;
                         }
+                    }
+                }
+
+                if (cantLineas == 2 && !error)
+                {
+                    if (txtLineaDos.Text.Length == 0)
+                    {
+                        MessageBox.Show("Descripcion linea dos vacia", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        error = true;
+                    }
+                    else
+                    {
+                        if (txtMesLineaDos.Text.Length == 0 || Int16.Parse(txtMesLineaDos.Text) < 1 || Int16.Parse(txtMesLineaDos.Text) > 12)
+                        {
+                            MessageBox.Show("El mes ingresado en la linea dos no es valido", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            error = true;
+                        }
                         else
                         {
-                            float parsedValueFloat;
-                            if (!float.TryParse(txtImporte.Text, out parsedValueFloat))
+                            int parsedAnioLineaDos;
+                            if (!int.TryParse(txtAnioLineaDos.Text, out parsedAnioLineaDos))
                             {
-                                MessageBox.Show("El importe ingresado no es valido", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("El año ingresado en la linea dos no es valido", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 error = true;
-                            }
-                            else
-                            {
-                                if (cantLineas > 1)
-                                {
-                                    if (txtLineaDos.Text.Length == 0)
-                                    {
-                                        MessageBox.Show("Descripcion linea dos vacia", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                        error = true;
-                                    }
-                                    else
-                                    {
-                                        if (txtMesLineaDos.Text.Length == 0 || Int16.Parse(txtMesLineaDos.Text) < 1 || Int16.Parse(txtMesLineaDos.Text) > 12)
-                                        {
-                                            MessageBox.Show("El mes ingresado en la linea dos no es valido", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                            error = true;
-                                        }
-                                        else
-                                        {
-                                            int parsedAnioLineaDos;
-                                            if (!int.TryParse(txtAnioLineaDos.Text, out parsedAnioLineaDos))
-                                            {
-                                                MessageBox.Show("El año ingresado en la linea dos no es valido", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                                error = true;
-                                            }
-                                            if (cantLineas == 3)
-                                            {
-                                                if (txtLineaTres.Text.Length == 0)
-                                                {
-                                                    MessageBox.Show("Descripcion linea tres vacia", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                                    error = true;
-                                                }
-                                                else
-                                                {
-                                                    if (txtMesLineaTres.Text.Length == 0 || Int16.Parse(txtMesLineaTres.Text) < 1 || Int16.Parse(txtMesLineaTres.Text) > 12)
-                                                    {
-                                                        MessageBox.Show("El mes ingresado en la linea dos no es valido", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                                        error = true;
-                                                    }
-                                                    else
-                                                    {
-                                                        int parsedAnioLineaTres;
-                                                        if (!int.TryParse(txtAnioLineaTres.Text, out parsedAnioLineaTres))
-                                                        {
-                                                            MessageBox.Show("El año ingresado en la linea tres no es valido", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                                            error = true;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
                             }
                         }
                     }
                 }
+
+                if (cantLineas == 3 && !error)
+                {
+                    if (txtLineaTres.Text.Length == 0)
+                    {
+                        MessageBox.Show("Descripcion linea tres vacia", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        error = true;
+                    }
+                    else
+                    {
+                        if (txtMesLineaTres.Text.Length == 0 || Int16.Parse(txtMesLineaTres.Text) < 1 || Int16.Parse(txtMesLineaTres.Text) > 12)
+                        {
+                            MessageBox.Show("El mes ingresado en la linea dos no es valido", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            error = true;
+                        }
+                        else
+                        {
+                            int parsedAnioLineaTres;
+                            if (!int.TryParse(txtAnioLineaTres.Text, out parsedAnioLineaTres))
+                            {
+                                MessageBox.Show("El año ingresado en la linea tres no es valido", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                error = true;
+                            }
+                        }
+                    }
+                }
+
+                if (!error)
+                {
+                    string gastoAux = txtImporte.Text.Replace(',', '.');
+                    float parsedValueFloat;
+                    if (!float.TryParse(gastoAux, out parsedValueFloat))
+                    {
+                        MessageBox.Show("El importe ingresado no es valido", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        error = true;
+                    }
+                }
+
                 btnImprimir.Enabled = true;
-                if(!error)
+                if (!error)
                 {
                     guardarDatos();
                 }

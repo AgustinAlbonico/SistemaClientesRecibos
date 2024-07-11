@@ -1,0 +1,11 @@
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\bin\Release\Capa dominio.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\bin\Release\Capa dominio.pdb
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\bin\Release\Capa datos.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\bin\Release\Capa entidades.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\bin\Release\Capa datos.pdb
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\bin\Release\Capa entidades.pdb
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\obj\Release\Capa negocio.csproj.AssemblyReference.cache
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\obj\Release\Capa negocio.csproj.CoreCompileInputs.cache
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\obj\Release\Capa negocio.csproj.CopyComplete
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\obj\Release\Capa dominio.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa dominio\obj\Release\Capa dominio.pdb

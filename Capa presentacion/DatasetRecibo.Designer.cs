@@ -543,11 +543,11 @@ namespace Capa_presentacion {
                         short mes_comprobante_linea_uno, 
                         short anio_comprobante_linea_uno, 
                         string descripcion_linea_dos, 
-                        string mes_comprobante_linea_dos, 
-                        string anio_comprobante_linea_dos, 
+                        short mes_comprobante_linea_dos, 
+                        short anio_comprobante_linea_dos, 
                         string descripcion_linea_tres, 
-                        string mes_comprobante_linea_tres, 
-                        string anio_comprobante_linea_tres) {
+                        short mes_comprobante_linea_tres, 
+                        short anio_comprobante_linea_tres) {
                 DatatableReciboRow rowDatatableReciboRow = ((DatatableReciboRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         nro_comprobante,
@@ -639,15 +639,15 @@ namespace Capa_presentacion {
                 base.Columns.Add(this.columnanio_comprobante_linea_uno);
                 this.columndescripcion_linea_dos = new global::System.Data.DataColumn("descripcion_linea_dos", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columndescripcion_linea_dos);
-                this.columnmes_comprobante_linea_dos = new global::System.Data.DataColumn("mes_comprobante_linea_dos", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnmes_comprobante_linea_dos = new global::System.Data.DataColumn("mes_comprobante_linea_dos", typeof(short), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnmes_comprobante_linea_dos);
-                this.columnanio_comprobante_linea_dos = new global::System.Data.DataColumn("anio_comprobante_linea_dos", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnanio_comprobante_linea_dos = new global::System.Data.DataColumn("anio_comprobante_linea_dos", typeof(short), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnanio_comprobante_linea_dos);
                 this.columndescripcion_linea_tres = new global::System.Data.DataColumn("descripcion_linea_tres", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columndescripcion_linea_tres);
-                this.columnmes_comprobante_linea_tres = new global::System.Data.DataColumn("mes_comprobante_linea_tres", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnmes_comprobante_linea_tres = new global::System.Data.DataColumn("mes_comprobante_linea_tres", typeof(short), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnmes_comprobante_linea_tres);
-                this.columnanio_comprobante_linea_tres = new global::System.Data.DataColumn("anio_comprobante_linea_tres", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnanio_comprobante_linea_tres = new global::System.Data.DataColumn("anio_comprobante_linea_tres", typeof(short), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnanio_comprobante_linea_tres);
                 this.columnnro_comprobante.ReadOnly = true;
             }
@@ -1005,10 +1005,10 @@ namespace Capa_presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string mes_comprobante_linea_dos {
+            public short mes_comprobante_linea_dos {
                 get {
                     try {
-                        return ((string)(this[this.tableDatatableRecibo.mes_comprobante_linea_dosColumn]));
+                        return ((short)(this[this.tableDatatableRecibo.mes_comprobante_linea_dosColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("El valor de la columna \'mes_comprobante_linea_dos\' de la tabla \'DatatableRecibo\' " +
@@ -1022,10 +1022,10 @@ namespace Capa_presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string anio_comprobante_linea_dos {
+            public short anio_comprobante_linea_dos {
                 get {
                     try {
-                        return ((string)(this[this.tableDatatableRecibo.anio_comprobante_linea_dosColumn]));
+                        return ((short)(this[this.tableDatatableRecibo.anio_comprobante_linea_dosColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("El valor de la columna \'anio_comprobante_linea_dos\' de la tabla \'DatatableRecibo\'" +
@@ -1056,10 +1056,10 @@ namespace Capa_presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string mes_comprobante_linea_tres {
+            public short mes_comprobante_linea_tres {
                 get {
                     try {
-                        return ((string)(this[this.tableDatatableRecibo.mes_comprobante_linea_tresColumn]));
+                        return ((short)(this[this.tableDatatableRecibo.mes_comprobante_linea_tresColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("El valor de la columna \'mes_comprobante_linea_tres\' de la tabla \'DatatableRecibo\'" +
@@ -1073,10 +1073,10 @@ namespace Capa_presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string anio_comprobante_linea_tres {
+            public short anio_comprobante_linea_tres {
                 get {
                     try {
-                        return ((string)(this[this.tableDatatableRecibo.anio_comprobante_linea_tresColumn]));
+                        return ((short)(this[this.tableDatatableRecibo.anio_comprobante_linea_tresColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("El valor de la columna \'anio_comprobante_linea_tres\' de la tabla \'DatatableRecibo" +

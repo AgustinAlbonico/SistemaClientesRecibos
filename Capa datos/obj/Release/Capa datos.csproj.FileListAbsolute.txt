@@ -1,0 +1,9 @@
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa datos\bin\Release\Capa datos.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa datos\bin\Release\Capa datos.pdb
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa datos\bin\Release\Capa entidades.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa datos\bin\Release\Capa entidades.pdb
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa datos\obj\Release\Capa datos.csproj.AssemblyReference.cache
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa datos\obj\Release\Capa datos.csproj.CoreCompileInputs.cache
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa datos\obj\Release\Capa datos.csproj.CopyComplete
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa datos\obj\Release\Capa datos.dll
+C:\Users\Albo\Desktop\sistema-crud-clientesyrecibos\Capa datos\obj\Release\Capa datos.pdb

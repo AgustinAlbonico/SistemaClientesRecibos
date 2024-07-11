@@ -17,6 +17,7 @@ namespace Capa_presentacion
     {
 
         GastoNegocio gn = new GastoNegocio();
+        ReciboNegocio rn = new ReciboNegocio();
 
         int mesActual;
         int anioActual;
@@ -33,6 +34,25 @@ namespace Capa_presentacion
 
             mesActual = fechaActual.Month;
             anioActual = fechaActual.Year;
+
+            //Config para no poder seleccionar ninguna fila
+            dgvDatos.ReadOnly = true; // Hace que el DataGridView sea de solo lectura
+            dgvDatos.AllowUserToAddRows = false; // Evita que se puedan agregar filas nuevas
+
+            // Manejar eventos para evitar que las celdas se seleccionen
+            dgvDatos.CellClick += (sender, e) =>
+            {
+                dgvDatos.ClearSelection(); // Limpiar la selección después de hacer clic en una celda
+            };
+
+            dgvDatos.RowStateChanged += (sender, e) =>
+            {
+                if (e.StateChanged == DataGridViewElementStates.Selected)
+                {
+                    dgvDatos.ClearSelection(); // Limpiar la selección si se selecciona una fila
+                }
+            };
+
         }
 
         public void getData()
@@ -64,30 +84,31 @@ namespace Capa_presentacion
                         }
                         else
                         {
-                            if (cell.ColumnIndex == 1 || cell.ColumnIndex == 2 || cell.ColumnIndex == 3)
+                            if (cell.ColumnIndex == 3)
                             {
-                                if (cell.ColumnIndex == 3)
+                                if (float.Parse(cell.Value.ToString()) < 0)
                                 {
-                                    if (float.Parse(cell.Value.ToString()) < 0)
-                                    {
-                                        cell.Style.BackColor = Color.IndianRed;
-                                    }
-                                    else
-                                    {
-                                        cell.Style.BackColor = Color.LightGreen;
-                                    }
-                                    saldoMensual += float.Parse(cell.Value.ToString());
+                                    cell.Style.BackColor = Color.IndianRed;
                                 }
+                                else
+                                {
+                                    cell.Style.BackColor = Color.LightGreen;
+                                }
+                                saldoMensual += float.Parse(cell.Value.ToString());
+                                
                             }
                         }
+
                     }
                 }
             }
+            saldoMensual = rn.getSaldoPorMesAnio(System.Int16.Parse(txtMes.Text), System.Int16.Parse(txtAnio.Text));
             txtSaldoMes.Text = saldoMensual.ToString();
-            if(saldoMensual < 0)
+            if (saldoMensual < 0)
             {
                 txtSaldoMes.BackColor = Color.IndianRed;
-            } else
+            }
+            else
             {
                 txtSaldoMes.BackColor = Color.LightGreen;
             }
@@ -139,6 +160,40 @@ namespace Capa_presentacion
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void dgvDatos_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            //Lleno los campos vacios
+            foreach (DataGridViewRow row in dgvDatos.Rows)
+            {
+                if (!row.IsNewRow)
+                {
+                    foreach (DataGridViewCell cell in row.Cells)
+                    {
+
+                        if (cell.ColumnIndex == 3)
+                        {
+                            if (float.Parse(cell.Value.ToString()) < 0)
+                            {
+                                cell.Style.BackColor = Color.IndianRed;
+                            }
+                            else
+                            {
+                                cell.Style.BackColor = Color.LightGreen;
+                            }
+                        }
+                    }
+
+
+                }
+            }
+        }
+
+        private void btnDetalle_Click(object sender, EventArgs e)
+        {
+            PantallaCajaPorDia pcjpd = new PantallaCajaPorDia();
+            pcjpd.ShowDialog();
         }
     }
 }
